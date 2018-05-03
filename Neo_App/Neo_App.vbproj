@@ -191,6 +191,7 @@
     <Content Include="NeoApp.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\banner3.jpg" />
     <None Include="Resources\bt32.png" />
     <None Include="Resources\bt4.png" />
     <None Include="Resources\construction1.png" />

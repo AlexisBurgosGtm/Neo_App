@@ -34,7 +34,9 @@ Public Class Main
 
                 If fcn_Login(Me.txtUsuario.Text, Me.txtPass.Text) = True Then
                     Call fcn_ConectarAccess()
+
                     Me.NAVFRAM_INICIO.SelectedPage = np_inicio
+                    Call fcn_HablarTexto("Bienvenido " & Me.txtUsuario.Text)
 
                 Else
                     Call fcn_Mensaje("Usuario o Contraseña incorrectos", Me)

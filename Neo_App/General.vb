@@ -15,10 +15,16 @@ Module General
 
     Public oAccess As New Access.Application
 
-    Public Function fcn_HablarTexto(ByVal texto As String)
-        Dim Hablar As New SpeechSynthesizer
-        Hablar.SpeakAsync(texto)
-        Hablar.Dispose()
+    Public Function fcn_HablarTexto(ByVal texto As String) As Boolean
+        Try
+            Dim Hablar As New SpeechSynthesizer
+            Hablar.SpeakAsync(texto)
+            Hablar.Dispose()
+            Return True
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+            Return False
+        End Try
 
     End Function
 
