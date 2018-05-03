@@ -33,10 +33,11 @@ Public Class Main
             If Me.txtPass.Text <> "" Then
 
                 If fcn_Login(Me.txtUsuario.Text, Me.txtPass.Text) = True Then
+                    Call fcn_HablarTexto("Bienvenido " & Me.txtUsuario.Text)
+
                     Call fcn_ConectarAccess()
 
                     Me.NAVFRAM_INICIO.SelectedPage = np_inicio
-                    Call fcn_HablarTexto("Bienvenido " & Me.txtUsuario.Text)
 
                 Else
                     Call fcn_Mensaje("Usuario o Contraseña incorrectos", Me)
@@ -133,6 +134,10 @@ Public Class Main
 
 #Region " ** FUNCIONES ** "
 
+    Private Sub Hablar(ByVal texto As String)
+        Dim sp As New Speech.Synthesis.SpeechSynthesizer
+        sp.SpeakAsync(texto)
 
+    End Sub
 #End Region
 End Class

@@ -19,7 +19,7 @@ Module General
         Try
             Dim Hablar As New SpeechSynthesizer
             Hablar.SpeakAsync(texto)
-            Hablar.Dispose()
+            ' Hablar.Dispose()
             Return True
         Catch ex As Exception
             MsgBox(ex.ToString)
