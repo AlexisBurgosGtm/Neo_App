@@ -10,7 +10,7 @@ Module General
 
     Public GlobalErrorDesc As String
 
-    Public cn As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\NeoApp\NeoApp.accdb")
+    Public cn As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\NeoApp.accdb")
 
 
     Public oAccess As New Access.Application
@@ -35,6 +35,7 @@ Module General
             End If
             Return True
         Catch ex As Exception
+            MsgBox(ex.ToString)
             GlobalErrorDesc = ex.ToString
             Return False
         End Try
@@ -42,9 +43,10 @@ Module General
 
     Public Function fcn_ConectarAccess() As Boolean
         Try
-            oAccess.OpenCurrentDatabase(filepath:="C:\NeoApp\NeoApp.accdb", Exclusive:=False)
+            oAccess.OpenCurrentDatabase(filepath:=Application.StartupPath & "\NeoApp.accdb", Exclusive:=False)
             Return True
         Catch ex As Exception
+            MsgBox(ex.ToString)
             GlobalErrorDesc = ex.ToString
             Return False
         End Try

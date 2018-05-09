@@ -191,6 +191,15 @@
     <Content Include="NeoApp.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\bt20.png" />
+    <None Include="Resources\btnConfig.png" />
+    <None Include="Resources\btpiezas.png" />
+    <None Include="Resources\btEdit.png" />
+    <None Include="Resources\btDias.png" />
+    <None Include="Resources\bt22.png" />
+    <None Include="Resources\btExito.png" />
+    <None Include="Resources\bt24.png" />
+    <None Include="Resources\bt23.png" />
     <None Include="Resources\banner3.jpg" />
     <None Include="Resources\bt32.png" />
     <None Include="Resources\bt4.png" />

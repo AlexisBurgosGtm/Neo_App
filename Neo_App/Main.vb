@@ -72,6 +72,7 @@ Public Class Main
             cn.Close()
 
         Catch ex As Exception
+
             GlobalErrorDesc = ex.ToString
             Return False
         End Try
@@ -125,7 +126,13 @@ Public Class Main
     Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
         Me.NAVFRAM_INICIO.SelectedPage = np_inicio
     End Sub
+    Private Sub btnConfig_Click(sender As Object, e As EventArgs) Handles btnConfig.Click
+        Me.NAVFRAM_INICIO.SelectedPage = NP_Config
+    End Sub
 
+    Private Sub btnConfig_Atras_Click(sender As Object, e As EventArgs) Handles btnConfig_Atras.Click
+        Me.NAVFRAM_INICIO.SelectedPage = np_inicio
+    End Sub
 
 
 #End Region
@@ -139,5 +146,7 @@ Public Class Main
         sp.SpeakAsync(texto)
 
     End Sub
+
+
 #End Region
 End Class

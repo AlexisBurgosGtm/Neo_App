@@ -21,36 +21,33 @@ Partial Class Main
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
-        Dim TileItemElement22 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemFrame7 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
-        Dim TileItemElement23 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemFrame8 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
-        Dim TileItemElement24 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement25 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemFrame9 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
-        Dim TileItemElement26 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemFrame10 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
-        Dim TileItemElement27 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement28 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement29 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement30 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement31 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement32 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement33 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement34 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement35 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemFrame11 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
-        Dim TileItemElement36 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemFrame12 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
-        Dim TileItemElement37 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement38 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement39 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement40 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement41 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TileItemElement42 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
-        Dim TimeRuler4 As DevExpress.XtraScheduler.TimeRuler = New DevExpress.XtraScheduler.TimeRuler()
-        Dim TimeRuler5 As DevExpress.XtraScheduler.TimeRuler = New DevExpress.XtraScheduler.TimeRuler()
-        Dim TimeRuler6 As DevExpress.XtraScheduler.TimeRuler = New DevExpress.XtraScheduler.TimeRuler()
+        Dim TileItemElement43 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemFrame13 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
+        Dim TileItemElement44 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemFrame14 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
+        Dim TileItemElement45 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement46 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemFrame15 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
+        Dim TileItemElement47 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemFrame16 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
+        Dim TileItemElement48 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement49 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement50 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement51 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement52 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement53 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement54 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement55 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement56 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemFrame17 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
+        Dim TileItemElement57 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemFrame18 As DevExpress.XtraEditors.TileItemFrame = New DevExpress.XtraEditors.TileItemFrame()
+        Dim TileItemElement58 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement59 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement60 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement61 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement62 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
+        Dim TileItemElement63 As DevExpress.XtraEditors.TileItemElement = New DevExpress.XtraEditors.TileItemElement()
         Me.RibbonControl1 = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.SkinRibbonGalleryBarItem1 = New DevExpress.XtraBars.SkinRibbonGalleryBarItem()
         Me.RibbonStatusBar1 = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
@@ -64,6 +61,7 @@ Partial Class Main
         Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.np_inicio = New DevExpress.XtraBars.Navigation.NavigationPage()
+        Me.btnConfig = New System.Windows.Forms.PictureBox()
         Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TileControl1 = New DevExpress.XtraEditors.TileControl()
@@ -87,9 +85,12 @@ Partial Class Main
         Me.TileItem14 = New DevExpress.XtraEditors.TileItem()
         Me.np_cronograma = New DevExpress.XtraBars.Navigation.NavigationPage()
         Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
-        Me.SchedulerControl1 = New DevExpress.XtraScheduler.SchedulerControl()
         Me.SchedulerStorage1 = New DevExpress.XtraScheduler.SchedulerStorage(Me.components)
+        Me.NP_Config = New DevExpress.XtraBars.Navigation.NavigationPage()
+        Me.LabelControl4 = New DevExpress.XtraEditors.LabelControl()
+        Me.btnConfig_Atras = New DevExpress.XtraEditors.SimpleButton()
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
+        Me.LabelControl5 = New DevExpress.XtraEditors.LabelControl()
         CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NAVFRAM_INICIO, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.NAVFRAM_INICIO.SuspendLayout()
@@ -100,10 +101,11 @@ Partial Class Main
         CType(Me.txtPass.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.np_inicio.SuspendLayout()
+        CType(Me.btnConfig, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.np_cronograma.SuspendLayout()
-        CType(Me.SchedulerControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SchedulerStorage1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.NP_Config.SuspendLayout()
         Me.SuspendLayout()
         '
         'RibbonControl1
@@ -138,10 +140,11 @@ Partial Class Main
         Me.NAVFRAM_INICIO.Controls.Add(Me.np_login)
         Me.NAVFRAM_INICIO.Controls.Add(Me.np_inicio)
         Me.NAVFRAM_INICIO.Controls.Add(Me.np_cronograma)
+        Me.NAVFRAM_INICIO.Controls.Add(Me.NP_Config)
         Me.NAVFRAM_INICIO.Dock = System.Windows.Forms.DockStyle.Fill
         Me.NAVFRAM_INICIO.Location = New System.Drawing.Point(0, 54)
         Me.NAVFRAM_INICIO.Name = "NAVFRAM_INICIO"
-        Me.NAVFRAM_INICIO.Pages.AddRange(New DevExpress.XtraBars.Navigation.NavigationPageBase() {Me.np_login, Me.np_inicio, Me.np_cronograma})
+        Me.NAVFRAM_INICIO.Pages.AddRange(New DevExpress.XtraBars.Navigation.NavigationPageBase() {Me.np_login, Me.np_inicio, Me.np_cronograma, Me.NP_Config})
         Me.NAVFRAM_INICIO.SelectedPage = Me.np_login
         Me.NAVFRAM_INICIO.Size = New System.Drawing.Size(1043, 623)
         Me.NAVFRAM_INICIO.TabIndex = 2
@@ -236,15 +239,27 @@ Partial Class Main
         '
         'np_inicio
         '
+        Me.np_inicio.Controls.Add(Me.btnConfig)
         Me.np_inicio.Controls.Add(Me.LabelControl3)
         Me.np_inicio.Controls.Add(Me.PictureBox2)
         Me.np_inicio.Controls.Add(Me.TileControl1)
         Me.np_inicio.Name = "np_inicio"
         Me.np_inicio.Size = New System.Drawing.Size(1043, 623)
         '
+        'btnConfig
+        '
+        Me.btnConfig.Image = Global.Neo_App.My.Resources.Resources.btnConfig
+        Me.btnConfig.Location = New System.Drawing.Point(983, 4)
+        Me.btnConfig.Name = "btnConfig"
+        Me.btnConfig.Size = New System.Drawing.Size(47, 32)
+        Me.btnConfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnConfig.TabIndex = 4
+        Me.btnConfig.TabStop = False
+        '
         'LabelControl3
         '
         Me.LabelControl3.Appearance.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl3.Appearance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.LabelControl3.Location = New System.Drawing.Point(31, 24)
         Me.LabelControl3.Name = "LabelControl3"
         Me.LabelControl3.Size = New System.Drawing.Size(55, 23)
@@ -254,9 +269,9 @@ Partial Class Main
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.Neo_App.My.Resources.Resources.conceptoNeoWeb
-        Me.PictureBox2.Location = New System.Drawing.Point(22, 84)
+        Me.PictureBox2.Location = New System.Drawing.Point(12, 66)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(151, 244)
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 145)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 2
         Me.PictureBox2.TabStop = False
@@ -270,12 +285,12 @@ Partial Class Main
         Me.TileControl1.Groups.Add(Me.TileGroup3)
         Me.TileControl1.Groups.Add(Me.TileGroup4)
         Me.TileControl1.ItemSize = 110
-        Me.TileControl1.Location = New System.Drawing.Point(191, 11)
+        Me.TileControl1.Location = New System.Drawing.Point(150, 41)
         Me.TileControl1.MaxId = 18
         Me.TileControl1.Name = "TileControl1"
         Me.TileControl1.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.ScrollBar
         Me.TileControl1.ShowGroupText = True
-        Me.TileControl1.Size = New System.Drawing.Size(840, 606)
+        Me.TileControl1.Size = New System.Drawing.Size(881, 575)
         Me.TileControl1.TabIndex = 0
         Me.TileControl1.Text = "TileControl1"
         '
@@ -301,31 +316,31 @@ Partial Class Main
         Me.btn_inicio_proyectos.AppearanceItem.Normal.Options.UseBackColor = True
         Me.btn_inicio_proyectos.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.btn_inicio_proyectos.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement22.Image = Global.Neo_App.My.Resources.Resources.construction1
-        TileItemElement22.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement22.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement22.Text = "Proyectos"
-        Me.btn_inicio_proyectos.Elements.Add(TileItemElement22)
-        TileItemElement23.Image = Global.Neo_App.My.Resources.Resources.construction1
-        TileItemElement23.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement23.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement23.Text = "Proyectos"
-        TileItemFrame7.Elements.Add(TileItemElement23)
-        TileItemFrame7.Image = Global.Neo_App.My.Resources.Resources.construction1
-        TileItemFrame8.Appearance.BackColor = System.Drawing.Color.SteelBlue
-        TileItemFrame8.Appearance.BorderColor = System.Drawing.Color.Gray
-        TileItemFrame8.Appearance.ForeColor = System.Drawing.Color.White
-        TileItemFrame8.Appearance.Options.UseBackColor = True
-        TileItemFrame8.Appearance.Options.UseBorderColor = True
-        TileItemFrame8.Appearance.Options.UseForeColor = True
-        TileItemElement24.Image = Global.Neo_App.My.Resources.Resources.construction1
-        TileItemElement24.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement24.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement24.Text = "Proyectos"
-        TileItemFrame8.Elements.Add(TileItemElement24)
-        TileItemFrame8.Image = Global.Neo_App.My.Resources.Resources.construction1
-        Me.btn_inicio_proyectos.Frames.Add(TileItemFrame7)
-        Me.btn_inicio_proyectos.Frames.Add(TileItemFrame8)
+        TileItemElement43.Image = Global.Neo_App.My.Resources.Resources.construction1
+        TileItemElement43.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement43.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement43.Text = "Proyectos"
+        Me.btn_inicio_proyectos.Elements.Add(TileItemElement43)
+        TileItemElement44.Image = Global.Neo_App.My.Resources.Resources.construction1
+        TileItemElement44.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement44.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement44.Text = "Proyectos"
+        TileItemFrame13.Elements.Add(TileItemElement44)
+        TileItemFrame13.Image = Global.Neo_App.My.Resources.Resources.construction1
+        TileItemFrame14.Appearance.BackColor = System.Drawing.Color.SteelBlue
+        TileItemFrame14.Appearance.BorderColor = System.Drawing.Color.Gray
+        TileItemFrame14.Appearance.ForeColor = System.Drawing.Color.White
+        TileItemFrame14.Appearance.Options.UseBackColor = True
+        TileItemFrame14.Appearance.Options.UseBorderColor = True
+        TileItemFrame14.Appearance.Options.UseForeColor = True
+        TileItemElement45.Image = Global.Neo_App.My.Resources.Resources.construction1
+        TileItemElement45.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement45.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement45.Text = "Proyectos"
+        TileItemFrame14.Elements.Add(TileItemElement45)
+        TileItemFrame14.Image = Global.Neo_App.My.Resources.Resources.construction1
+        Me.btn_inicio_proyectos.Frames.Add(TileItemFrame13)
+        Me.btn_inicio_proyectos.Frames.Add(TileItemFrame14)
         Me.btn_inicio_proyectos.Id = 0
         Me.btn_inicio_proyectos.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
         Me.btn_inicio_proyectos.Name = "btn_inicio_proyectos"
@@ -338,25 +353,25 @@ Partial Class Main
         Me.btn_inicio_contactos.AppearanceItem.Normal.Options.UseBackColor = True
         Me.btn_inicio_contactos.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.btn_inicio_contactos.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement25.Image = Global.Neo_App.My.Resources.Resources.bt4
-        TileItemElement25.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement25.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement25.Text = "Contactos"
-        Me.btn_inicio_contactos.Elements.Add(TileItemElement25)
-        TileItemElement26.Image = Global.Neo_App.My.Resources.Resources.bt4
-        TileItemElement26.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement26.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement26.Text = "Contactos"
-        TileItemFrame9.Elements.Add(TileItemElement26)
-        TileItemFrame9.Image = Global.Neo_App.My.Resources.Resources.bt4
-        TileItemElement27.Image = Global.Neo_App.My.Resources.Resources.bt4
-        TileItemElement27.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement27.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement27.Text = "Contactos"
-        TileItemFrame10.Elements.Add(TileItemElement27)
-        TileItemFrame10.Image = Global.Neo_App.My.Resources.Resources.bt4
-        Me.btn_inicio_contactos.Frames.Add(TileItemFrame9)
-        Me.btn_inicio_contactos.Frames.Add(TileItemFrame10)
+        TileItemElement46.Image = Global.Neo_App.My.Resources.Resources.bt4
+        TileItemElement46.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement46.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement46.Text = "Contactos"
+        Me.btn_inicio_contactos.Elements.Add(TileItemElement46)
+        TileItemElement47.Image = Global.Neo_App.My.Resources.Resources.bt4
+        TileItemElement47.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement47.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement47.Text = "Contactos"
+        TileItemFrame15.Elements.Add(TileItemElement47)
+        TileItemFrame15.Image = Global.Neo_App.My.Resources.Resources.bt4
+        TileItemElement48.Image = Global.Neo_App.My.Resources.Resources.bt4
+        TileItemElement48.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement48.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement48.Text = "Contactos"
+        TileItemFrame16.Elements.Add(TileItemElement48)
+        TileItemFrame16.Image = Global.Neo_App.My.Resources.Resources.bt4
+        Me.btn_inicio_contactos.Frames.Add(TileItemFrame15)
+        Me.btn_inicio_contactos.Frames.Add(TileItemFrame16)
         Me.btn_inicio_contactos.Id = 3
         Me.btn_inicio_contactos.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
         Me.btn_inicio_contactos.Name = "btn_inicio_contactos"
@@ -369,10 +384,11 @@ Partial Class Main
         Me.btn_inicio_areas.AppearanceItem.Normal.Options.UseBackColor = True
         Me.btn_inicio_areas.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.btn_inicio_areas.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement28.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement28.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement28.Text = "Areas"
-        Me.btn_inicio_areas.Elements.Add(TileItemElement28)
+        TileItemElement49.Image = Global.Neo_App.My.Resources.Resources.bt23
+        TileItemElement49.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement49.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement49.Text = "Areas"
+        Me.btn_inicio_areas.Elements.Add(TileItemElement49)
         Me.btn_inicio_areas.Id = 5
         Me.btn_inicio_areas.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium
         Me.btn_inicio_areas.Name = "btn_inicio_areas"
@@ -385,10 +401,11 @@ Partial Class Main
         Me.btn_inicio_subareas.AppearanceItem.Normal.Options.UseBackColor = True
         Me.btn_inicio_subareas.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.btn_inicio_subareas.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement29.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement29.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement29.Text = "SubAreas"
-        Me.btn_inicio_subareas.Elements.Add(TileItemElement29)
+        TileItemElement50.Image = Global.Neo_App.My.Resources.Resources.btpiezas
+        TileItemElement50.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement50.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement50.Text = "SubAreas"
+        Me.btn_inicio_subareas.Elements.Add(TileItemElement50)
         Me.btn_inicio_subareas.Id = 6
         Me.btn_inicio_subareas.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium
         Me.btn_inicio_subareas.Name = "btn_inicio_subareas"
@@ -401,10 +418,11 @@ Partial Class Main
         Me.btn_inicio_niveles.AppearanceItem.Normal.Options.UseBackColor = True
         Me.btn_inicio_niveles.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.btn_inicio_niveles.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement30.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement30.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement30.Text = "Niveles"
-        Me.btn_inicio_niveles.Elements.Add(TileItemElement30)
+        TileItemElement51.Image = Global.Neo_App.My.Resources.Resources.bt24
+        TileItemElement51.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement51.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement51.Text = "Niveles"
+        Me.btn_inicio_niveles.Elements.Add(TileItemElement51)
         Me.btn_inicio_niveles.Id = 4
         Me.btn_inicio_niveles.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium
         Me.btn_inicio_niveles.Name = "btn_inicio_niveles"
@@ -417,10 +435,11 @@ Partial Class Main
         Me.btn_inicio_procesos.AppearanceItem.Normal.Options.UseBackColor = True
         Me.btn_inicio_procesos.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.btn_inicio_procesos.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement31.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement31.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement31.Text = "Procesos"
-        Me.btn_inicio_procesos.Elements.Add(TileItemElement31)
+        TileItemElement52.Image = Global.Neo_App.My.Resources.Resources.btExito
+        TileItemElement52.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement52.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement52.Text = "Procesos"
+        Me.btn_inicio_procesos.Elements.Add(TileItemElement52)
         Me.btn_inicio_procesos.Id = 7
         Me.btn_inicio_procesos.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium
         Me.btn_inicio_procesos.Name = "btn_inicio_procesos"
@@ -433,42 +452,45 @@ Partial Class Main
         Me.btn_inicio_etapas.AppearanceItem.Normal.Options.UseBackColor = True
         Me.btn_inicio_etapas.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.btn_inicio_etapas.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement32.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement32.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement32.Text = "Etapas"
-        Me.btn_inicio_etapas.Elements.Add(TileItemElement32)
+        TileItemElement53.Image = Global.Neo_App.My.Resources.Resources.btDias
+        TileItemElement53.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement53.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement53.Text = "Etapas"
+        Me.btn_inicio_etapas.Elements.Add(TileItemElement53)
         Me.btn_inicio_etapas.Id = 8
         Me.btn_inicio_etapas.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium
         Me.btn_inicio_etapas.Name = "btn_inicio_etapas"
         '
         'btn_inicio_campos
         '
-        Me.btn_inicio_campos.AppearanceItem.Normal.BackColor = System.Drawing.Color.White
+        Me.btn_inicio_campos.AppearanceItem.Normal.BackColor = System.Drawing.Color.LightSlateGray
         Me.btn_inicio_campos.AppearanceItem.Normal.BorderColor = System.Drawing.Color.Gray
-        Me.btn_inicio_campos.AppearanceItem.Normal.ForeColor = System.Drawing.Color.Gray
+        Me.btn_inicio_campos.AppearanceItem.Normal.ForeColor = System.Drawing.Color.AliceBlue
         Me.btn_inicio_campos.AppearanceItem.Normal.Options.UseBackColor = True
         Me.btn_inicio_campos.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.btn_inicio_campos.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement33.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement33.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement33.Text = "Campos"
-        Me.btn_inicio_campos.Elements.Add(TileItemElement33)
+        TileItemElement54.Image = Global.Neo_App.My.Resources.Resources.btEdit
+        TileItemElement54.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement54.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement54.Text = "Campos"
+        Me.btn_inicio_campos.Elements.Add(TileItemElement54)
         Me.btn_inicio_campos.Id = 9
         Me.btn_inicio_campos.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium
         Me.btn_inicio_campos.Name = "btn_inicio_campos"
         '
         'btn_inicio_grupostrabajo
         '
-        Me.btn_inicio_grupostrabajo.AppearanceItem.Normal.BackColor = System.Drawing.Color.White
+        Me.btn_inicio_grupostrabajo.AppearanceItem.Normal.BackColor = System.Drawing.Color.SlateGray
         Me.btn_inicio_grupostrabajo.AppearanceItem.Normal.BorderColor = System.Drawing.Color.Gray
-        Me.btn_inicio_grupostrabajo.AppearanceItem.Normal.ForeColor = System.Drawing.Color.Gray
+        Me.btn_inicio_grupostrabajo.AppearanceItem.Normal.ForeColor = System.Drawing.Color.White
         Me.btn_inicio_grupostrabajo.AppearanceItem.Normal.Options.UseBackColor = True
         Me.btn_inicio_grupostrabajo.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.btn_inicio_grupostrabajo.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement34.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement34.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement34.Text = "Grupos de Trabajo"
-        Me.btn_inicio_grupostrabajo.Elements.Add(TileItemElement34)
+        TileItemElement55.Image = Global.Neo_App.My.Resources.Resources.bt22
+        TileItemElement55.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement55.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement55.Text = "Grupos de Trabajo"
+        Me.btn_inicio_grupostrabajo.Elements.Add(TileItemElement55)
         Me.btn_inicio_grupostrabajo.Id = 10
         Me.btn_inicio_grupostrabajo.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium
         Me.btn_inicio_grupostrabajo.Name = "btn_inicio_grupostrabajo"
@@ -489,31 +511,31 @@ Partial Class Main
         Me.btn_inicio_cronograma.AppearanceItem.Normal.Options.UseBackColor = True
         Me.btn_inicio_cronograma.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.btn_inicio_cronograma.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement35.Image = Global.Neo_App.My.Resources.Resources.bt32
-        TileItemElement35.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement35.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement35.Text = "Cronogramas"
-        Me.btn_inicio_cronograma.Elements.Add(TileItemElement35)
-        TileItemElement36.Image = Global.Neo_App.My.Resources.Resources.bt32
-        TileItemElement36.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement36.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement36.Text = "Cronogramas"
-        TileItemFrame11.Elements.Add(TileItemElement36)
-        TileItemFrame11.Image = Global.Neo_App.My.Resources.Resources.bt32
-        TileItemFrame12.Appearance.BackColor = System.Drawing.Color.AliceBlue
-        TileItemFrame12.Appearance.BorderColor = System.Drawing.Color.White
-        TileItemFrame12.Appearance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        TileItemFrame12.Appearance.Options.UseBackColor = True
-        TileItemFrame12.Appearance.Options.UseBorderColor = True
-        TileItemFrame12.Appearance.Options.UseForeColor = True
-        TileItemElement37.Image = Global.Neo_App.My.Resources.Resources.bt32
-        TileItemElement37.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement37.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement37.Text = "Cronogramas"
-        TileItemFrame12.Elements.Add(TileItemElement37)
-        TileItemFrame12.Image = Global.Neo_App.My.Resources.Resources.bt32
-        Me.btn_inicio_cronograma.Frames.Add(TileItemFrame11)
-        Me.btn_inicio_cronograma.Frames.Add(TileItemFrame12)
+        TileItemElement56.Image = Global.Neo_App.My.Resources.Resources.bt32
+        TileItemElement56.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement56.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement56.Text = "Cronogramas"
+        Me.btn_inicio_cronograma.Elements.Add(TileItemElement56)
+        TileItemElement57.Image = Global.Neo_App.My.Resources.Resources.bt32
+        TileItemElement57.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement57.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement57.Text = "Cronogramas"
+        TileItemFrame17.Elements.Add(TileItemElement57)
+        TileItemFrame17.Image = Global.Neo_App.My.Resources.Resources.bt32
+        TileItemFrame18.Appearance.BackColor = System.Drawing.Color.AliceBlue
+        TileItemFrame18.Appearance.BorderColor = System.Drawing.Color.White
+        TileItemFrame18.Appearance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        TileItemFrame18.Appearance.Options.UseBackColor = True
+        TileItemFrame18.Appearance.Options.UseBorderColor = True
+        TileItemFrame18.Appearance.Options.UseForeColor = True
+        TileItemElement58.Image = Global.Neo_App.My.Resources.Resources.bt32
+        TileItemElement58.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement58.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement58.Text = "Cronogramas"
+        TileItemFrame18.Elements.Add(TileItemElement58)
+        TileItemFrame18.Image = Global.Neo_App.My.Resources.Resources.bt32
+        Me.btn_inicio_cronograma.Frames.Add(TileItemFrame17)
+        Me.btn_inicio_cronograma.Frames.Add(TileItemFrame18)
         Me.btn_inicio_cronograma.Id = 12
         Me.btn_inicio_cronograma.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
         Me.btn_inicio_cronograma.Name = "btn_inicio_cronograma"
@@ -526,10 +548,10 @@ Partial Class Main
         Me.TileItem9.AppearanceItem.Normal.Options.UseBackColor = True
         Me.TileItem9.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.TileItem9.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement38.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement38.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement38.Text = "Actividades"
-        Me.TileItem9.Elements.Add(TileItemElement38)
+        TileItemElement59.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement59.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement59.Text = "Actividades"
+        Me.TileItem9.Elements.Add(TileItemElement59)
         Me.TileItem9.Id = 11
         Me.TileItem9.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium
         Me.TileItem9.Name = "TileItem9"
@@ -542,10 +564,10 @@ Partial Class Main
         Me.TileItem11.AppearanceItem.Normal.Options.UseBackColor = True
         Me.TileItem11.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.TileItem11.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement39.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
-        TileItemElement39.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
-        TileItemElement39.Text = "Parámetros"
-        Me.TileItem11.Elements.Add(TileItemElement39)
+        TileItemElement60.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomRight
+        TileItemElement60.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside
+        TileItemElement60.Text = "Parámetros"
+        Me.TileItem11.Elements.Add(TileItemElement60)
         Me.TileItem11.Id = 13
         Me.TileItem11.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium
         Me.TileItem11.Name = "TileItem11"
@@ -566,8 +588,8 @@ Partial Class Main
         Me.TileItem15.AppearanceItem.Normal.Options.UseBackColor = True
         Me.TileItem15.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.TileItem15.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement40.Text = "Control de Flujo de Capital"
-        Me.TileItem15.Elements.Add(TileItemElement40)
+        TileItemElement61.Text = "Control de Flujo de Capital"
+        Me.TileItem15.Elements.Add(TileItemElement61)
         Me.TileItem15.Id = 17
         Me.TileItem15.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
         Me.TileItem15.Name = "TileItem15"
@@ -580,8 +602,8 @@ Partial Class Main
         Me.TileItem12.AppearanceItem.Normal.Options.UseBackColor = True
         Me.TileItem12.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.TileItem12.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement41.Text = "Actividades"
-        Me.TileItem12.Elements.Add(TileItemElement41)
+        TileItemElement62.Text = "Actividades"
+        Me.TileItem12.Elements.Add(TileItemElement62)
         Me.TileItem12.Id = 14
         Me.TileItem12.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium
         Me.TileItem12.Name = "TileItem12"
@@ -594,47 +616,68 @@ Partial Class Main
         Me.TileItem14.AppearanceItem.Normal.Options.UseBackColor = True
         Me.TileItem14.AppearanceItem.Normal.Options.UseBorderColor = True
         Me.TileItem14.AppearanceItem.Normal.Options.UseForeColor = True
-        TileItemElement42.Text = "Aportes"
-        Me.TileItem14.Elements.Add(TileItemElement42)
+        TileItemElement63.Text = "Aportes"
+        Me.TileItem14.Elements.Add(TileItemElement63)
         Me.TileItem14.Id = 16
         Me.TileItem14.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium
         Me.TileItem14.Name = "TileItem14"
         '
         'np_cronograma
         '
+        Me.np_cronograma.Controls.Add(Me.LabelControl5)
         Me.np_cronograma.Controls.Add(Me.SimpleButton1)
-        Me.np_cronograma.Controls.Add(Me.SchedulerControl1)
         Me.np_cronograma.Name = "np_cronograma"
         Me.np_cronograma.Size = New System.Drawing.Size(1043, 623)
         '
         'SimpleButton1
         '
+        Me.SimpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat
+        Me.SimpleButton1.Image = Global.Neo_App.My.Resources.Resources.bt20
         Me.SimpleButton1.Location = New System.Drawing.Point(3, 6)
         Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(85, 34)
+        Me.SimpleButton1.Size = New System.Drawing.Size(106, 52)
         Me.SimpleButton1.TabIndex = 1
         Me.SimpleButton1.Text = "Atras"
         '
-        'SchedulerControl1
+        'NP_Config
         '
-        Me.SchedulerControl1.Location = New System.Drawing.Point(0, 46)
-        Me.SchedulerControl1.MenuManager = Me.RibbonControl1
-        Me.SchedulerControl1.Name = "SchedulerControl1"
-        Me.SchedulerControl1.Size = New System.Drawing.Size(1040, 571)
-        Me.SchedulerControl1.Start = New Date(2018, 5, 2, 0, 0, 0, 0)
-        Me.SchedulerControl1.Storage = Me.SchedulerStorage1
-        Me.SchedulerControl1.TabIndex = 0
-        Me.SchedulerControl1.Text = "SchedulerControl1"
-        Me.SchedulerControl1.Views.DayView.TimeRulers.Add(TimeRuler4)
-        Me.SchedulerControl1.Views.FullWeekView.Enabled = True
-        Me.SchedulerControl1.Views.FullWeekView.TimeRulers.Add(TimeRuler5)
-        Me.SchedulerControl1.Views.WeekView.Enabled = False
-        Me.SchedulerControl1.Views.WorkWeekView.TimeRulers.Add(TimeRuler6)
+        Me.NP_Config.Controls.Add(Me.LabelControl4)
+        Me.NP_Config.Controls.Add(Me.btnConfig_Atras)
+        Me.NP_Config.Name = "NP_Config"
+        Me.NP_Config.Size = New System.Drawing.Size(1043, 623)
+        '
+        'LabelControl4
+        '
+        Me.LabelControl4.Appearance.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl4.Location = New System.Drawing.Point(129, 18)
+        Me.LabelControl4.Name = "LabelControl4"
+        Me.LabelControl4.Size = New System.Drawing.Size(133, 23)
+        Me.LabelControl4.TabIndex = 3
+        Me.LabelControl4.Text = "Configuraciones"
+        '
+        'btnConfig_Atras
+        '
+        Me.btnConfig_Atras.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat
+        Me.btnConfig_Atras.Image = Global.Neo_App.My.Resources.Resources.bt20
+        Me.btnConfig_Atras.Location = New System.Drawing.Point(3, 6)
+        Me.btnConfig_Atras.Name = "btnConfig_Atras"
+        Me.btnConfig_Atras.Size = New System.Drawing.Size(100, 51)
+        Me.btnConfig_Atras.TabIndex = 2
+        Me.btnConfig_Atras.Text = "Atras"
         '
         'DefaultLookAndFeel1
         '
         Me.DefaultLookAndFeel1.EnableBonusSkins = True
         Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013"
+        '
+        'LabelControl5
+        '
+        Me.LabelControl5.Appearance.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl5.Location = New System.Drawing.Point(129, 18)
+        Me.LabelControl5.Name = "LabelControl5"
+        Me.LabelControl5.Size = New System.Drawing.Size(103, 23)
+        Me.LabelControl5.TabIndex = 4
+        Me.LabelControl5.Text = "Cronograma"
         '
         'Main
         '
@@ -663,10 +706,13 @@ Partial Class Main
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.np_inicio.ResumeLayout(False)
         Me.np_inicio.PerformLayout()
+        CType(Me.btnConfig, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.np_cronograma.ResumeLayout(False)
-        CType(Me.SchedulerControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.np_cronograma.PerformLayout()
         CType(Me.SchedulerStorage1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.NP_Config.ResumeLayout(False)
+        Me.NP_Config.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -706,9 +752,13 @@ Partial Class Main
     Friend WithEvents TileItem12 As DevExpress.XtraEditors.TileItem
     Friend WithEvents TileItem14 As DevExpress.XtraEditors.TileItem
     Friend WithEvents DefaultLookAndFeel1 As DevExpress.LookAndFeel.DefaultLookAndFeel
-    Friend WithEvents SchedulerControl1 As DevExpress.XtraScheduler.SchedulerControl
     Friend WithEvents SchedulerStorage1 As DevExpress.XtraScheduler.SchedulerStorage
     Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents btnConfig As PictureBox
+    Friend WithEvents NP_Config As DevExpress.XtraBars.Navigation.NavigationPage
+    Friend WithEvents btnConfig_Atras As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents LabelControl4 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents LabelControl5 As DevExpress.XtraEditors.LabelControl
 End Class
