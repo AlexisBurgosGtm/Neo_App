@@ -35,6 +35,7 @@ Module General
             End If
             Return True
         Catch ex As Exception
+            Call EnviarGmail("Error Ing Dedet al Conectar Oledb", ex.ToString, "ralexmailreu@gmail.com")
             MsgBox(ex.ToString)
             GlobalErrorDesc = ex.ToString
             Return False
@@ -46,6 +47,7 @@ Module General
             oAccess.OpenCurrentDatabase(filepath:=Application.StartupPath & "\NeoApp.accdb", Exclusive:=False)
             Return True
         Catch ex As Exception
+            Call EnviarGmail("Error Ing Dedet al cargar Access OBJ", ex.ToString, "ralexmailreu@gmail.com")
             MsgBox(ex.ToString)
             GlobalErrorDesc = ex.ToString
             Return False

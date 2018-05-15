@@ -75,7 +75,7 @@ Partial Class IntroSplash
         '
         'DefaultLookAndFeel1
         '
-        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013"
+        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Metropolis Dark"
         '
         'IntroSplash
         '

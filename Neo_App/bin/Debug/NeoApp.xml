@@ -97,5 +97,10 @@ NeoApp
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Neo_App.My.Resources.Resources.feature_settings">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

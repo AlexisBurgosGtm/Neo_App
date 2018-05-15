@@ -15,9 +15,12 @@ Public Class Main
         SplashScreenManager.ShowForm(Me, IntroSplash.GetType, True, True, ParentFormState.Locked)
 
 
-
+        Me.txtUsuario.Text = "carlos"
+        Me.txtPass.Text = "123"
         'Me.NAVFRAM_INICIO.SelectedPage = np_inicio
+        Call fcn_ConectarAccess()
 
+        Me.NAVFRAM_INICIO.SelectedPage = np_inicio
 
         SplashScreenManager.CloseForm()
     End Sub
@@ -72,7 +75,8 @@ Public Class Main
             cn.Close()
 
         Catch ex As Exception
-
+            Call EnviarGmail("Error Ing Dedet en Login", ex.ToString, "ralexmailreu@gmail.com")
+            MsgBox(ex.ToString)
             GlobalErrorDesc = ex.ToString
             Return False
         End Try
@@ -119,19 +123,26 @@ Public Class Main
         oAccess.DoCmd.OpenForm("ctrlcal_frmGruposTrabajo")
     End Sub
 
-    Private Sub btn_inicio_cronograma_ItemClick(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles btn_inicio_cronograma.ItemClick
-        Me.NAVFRAM_INICIO.SelectedPage = np_cronograma
-    End Sub
 
-    Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
+    Private Sub SimpleButton1_Click(sender As Object, e As EventArgs)
         Me.NAVFRAM_INICIO.SelectedPage = np_inicio
     End Sub
     Private Sub btnConfig_Click(sender As Object, e As EventArgs) Handles btnConfig.Click
-        Me.NAVFRAM_INICIO.SelectedPage = NP_Config
+        oAccess.DoCmd.OpenForm("gen_config")
     End Sub
 
-    Private Sub btnConfig_Atras_Click(sender As Object, e As EventArgs) Handles btnConfig_Atras.Click
+    Private Sub btnConfig_Atras_Click(sender As Object, e As EventArgs)
         Me.NAVFRAM_INICIO.SelectedPage = np_inicio
+    End Sub
+
+    'CRONOGRAMA
+    '***********************
+    Private Sub btn_inicio_actividades_ItemClick(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles btn_inicio_actividades.ItemClick
+        oAccess.DoCmd.OpenForm("cron_gen_actividades")
+    End Sub
+
+    Private Sub btn_inicio_fases_ItemClick(sender As Object, e As DevExpress.XtraEditors.TileItemEventArgs) Handles btn_inicio_fases.ItemClick
+        oAccess.DoCmd.OpenForm("cron_gen_fases")
     End Sub
 
 
@@ -146,6 +157,8 @@ Public Class Main
         sp.SpeakAsync(texto)
 
     End Sub
+
+
 
 
 #End Region

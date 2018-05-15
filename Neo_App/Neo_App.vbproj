@@ -191,6 +191,7 @@
     <Content Include="NeoApp.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\feature.settings.png" />
     <None Include="Resources\bt20.png" />
     <None Include="Resources\btnConfig.png" />
     <None Include="Resources\btpiezas.png" />
