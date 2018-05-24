@@ -8,9 +8,16 @@ Imports Microsoft.Office.Interop
 Module General
     'variables globales
 
+    Public Global_TipoConexion As String = "ACCESS"
+    'SQL
+    'MYSQL
+    'MONGO
+
+    Public Global_Cn 'objeto global para la conexión
+
     Public GlobalErrorDesc As String
 
-    Public cn As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\NeoApp.accdb")
+    Public cn As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\access\NeoApp.accdb")
 
 
     Public oAccess As New Access.Application
@@ -28,8 +35,20 @@ Module General
 
     End Function
 
+    Public Function fcn_MostrarVista(ByVal vista As Object, ByVal parent As Form, ByVal Titulo As String) As Form
+        Dim frm As New Form
+        frm.MdiParent = parent
+        frm.Text = Titulo
+
+        frm.Controls.Add(vista)
+        Return frm
+
+    End Function
+
     Public Function fcn_conectar() As Boolean
         Try
+
+
             If cn.State = 0 Then
                 cn.Open()
             End If
@@ -42,9 +61,30 @@ Module General
         End Try
     End Function
 
+    Public Function fcn_AbrirConexion() As Boolean
+
+        Try
+            If Global_TipoConexion = "ACCESS" Then
+                Global_Cn = New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\access\NeoApp.accdb")
+
+                If Global_Cn.state = 0 Then
+                    Global_Cn.Open()
+                End If
+            End If
+
+            Return True
+
+        Catch ex As Exception
+            GlobalErrorDesc = ex.ToString
+            Return False
+        End Try
+
+
+    End Function
+
     Public Function fcn_ConectarAccess() As Boolean
         Try
-            oAccess.OpenCurrentDatabase(filepath:=Application.StartupPath & "\NeoApp.accdb", Exclusive:=False)
+            oAccess.OpenCurrentDatabase(filepath:=Application.StartupPath & "\access\NeoApp.accdb", Exclusive:=False)
             Return True
         Catch ex As Exception
             Call EnviarGmail("Error Ing Dedet al cargar Access OBJ", ex.ToString, "ralexmailreu@gmail.com")

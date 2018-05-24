@@ -12,7 +12,7 @@ Public Class Main
 
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        SplashScreenManager.ShowForm(Me, IntroSplash.GetType, True, True, ParentFormState.Locked)
+        'SplashScreenManager.ShowForm(Me, IntroSplash.GetType, True, True, ParentFormState.Locked)
 
 
         Me.txtUsuario.Text = "carlos"
@@ -22,7 +22,7 @@ Public Class Main
 
         Me.NAVFRAM_INICIO.SelectedPage = np_inicio
 
-        SplashScreenManager.CloseForm()
+        'SplashScreenManager.CloseForm()
     End Sub
 
     Private Sub Main_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
