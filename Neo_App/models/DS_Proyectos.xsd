@@ -195,11 +195,25 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="tblTempChequeo" msprop:Generator_TableClassName="tblTempChequeoDataTable" msprop:Generator_TableVarName="tabletblTempChequeo" msprop:Generator_TablePropName="tblTempChequeo" msprop:Generator_RowDeletingName="tblTempChequeoRowDeleting" msprop:Generator_RowChangingName="tblTempChequeoRowChanging" msprop:Generator_RowEvHandlerName="tblTempChequeoRowChangeEventHandler" msprop:Generator_RowDeletedName="tblTempChequeoRowDeleted" msprop:Generator_UserTableName="tblTempChequeo" msprop:Generator_RowChangedName="tblTempChequeoRowChanged" msprop:Generator_RowEvArgName="tblTempChequeoRowChangeEvent" msprop:Generator_RowClassName="tblTempChequeoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODPROCESO" msprop:Generator_ColumnVarNameInTable="columnCODPROCESO" msprop:Generator_ColumnPropNameInRow="CODPROCESO" msprop:Generator_ColumnPropNameInTable="CODPROCESOColumn" msprop:Generator_UserColumnName="CODPROCESO" type="xs:int" minOccurs="0" />
+              <xs:element name="DESPROCESO" msprop:Generator_ColumnVarNameInTable="columnDESPROCESO" msprop:Generator_ColumnPropNameInRow="DESPROCESO" msprop:Generator_ColumnPropNameInTable="DESPROCESOColumn" msprop:Generator_UserColumnName="DESPROCESO" type="xs:string" minOccurs="0" />
+              <xs:element name="CODETAPA" msprop:Generator_ColumnVarNameInTable="columnCODETAPA" msprop:Generator_ColumnPropNameInRow="CODETAPA" msprop:Generator_ColumnPropNameInTable="CODETAPAColumn" msprop:Generator_UserColumnName="CODETAPA" type="xs:int" minOccurs="0" />
+              <xs:element name="DESETAPA" msprop:Generator_ColumnVarNameInTable="columnDESETAPA" msprop:Generator_ColumnPropNameInRow="DESETAPA" msprop:Generator_ColumnPropNameInTable="DESETAPAColumn" msprop:Generator_UserColumnName="DESETAPA" type="xs:string" minOccurs="0" />
+              <xs:element name="CODCAMPO" msprop:Generator_ColumnVarNameInTable="columnCODCAMPO" msprop:Generator_ColumnPropNameInRow="CODCAMPO" msprop:Generator_ColumnPropNameInTable="CODCAMPOColumn" msprop:Generator_UserColumnName="CODCAMPO" type="xs:int" minOccurs="0" />
+              <xs:element name="DESCAMPO" msprop:Generator_ColumnVarNameInTable="columnDESCAMPO" msprop:Generator_ColumnPropNameInRow="DESCAMPO" msprop:Generator_ColumnPropNameInTable="DESCAMPOColumn" msprop:Generator_UserColumnName="DESCAMPO" type="xs:string" minOccurs="0" />
+              <xs:element name="CODCALIFICACION" msprop:Generator_ColumnVarNameInTable="columnCODCALIFICACION" msprop:Generator_ColumnPropNameInRow="CODCALIFICACION" msprop:Generator_ColumnPropNameInTable="CODCALIFICACIONColumn" msprop:Generator_UserColumnName="CODCALIFICACION" type="xs:int" minOccurs="0" />
+              <xs:element name="DESCALIFICACION" msprop:Generator_ColumnVarNameInTable="columnDESCALIFICACION" msprop:Generator_ColumnPropNameInRow="DESCALIFICACION" msprop:Generator_ColumnPropNameInTable="DESCALIFICACIONColumn" msprop:Generator_UserColumnName="DESCALIFICACION" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
-    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+    <xs:unique name="ctrcal_ProyectosKey1">
       <xs:selector xpath=".//mstns:ctrcal_Proyectos" />
-      <xs:field xpath="mstns:Codigo" />
+      <xs:field xpath="mstns:CodProyecto" />
     </xs:unique>
   </xs:element>
 </xs:schema>

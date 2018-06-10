@@ -16,12 +16,27 @@ Represents a strongly typed in-memory cache of data.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:Neo_App.DS_Proyectos.tblTempChequeoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:Neo_App.DS_Proyectos.ctrcal_ProyectosRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
+<member name="T:Neo_App.DS_Proyectos.tblTempChequeoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
 <member name="T:Neo_App.DS_Proyectos.ctrcal_ProyectosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Neo_App.DS_Proyectos.tblTempChequeoRowChangeEvent">
 <summary>
 Row event argument class
 </summary>

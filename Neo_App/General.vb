@@ -8,6 +8,11 @@ Imports Microsoft.Office.Interop
 Module General
     'variables globales
 
+    'variables de proyectos
+    Public global_CodProyecto As Integer
+    Public global_DesProyecto As String
+
+
     Public Global_TipoConexion As String = "ACCESS"
     'SQL
     'MYSQL
@@ -39,7 +44,7 @@ Module General
         Dim frm As New Form
         frm.MdiParent = parent
         frm.Text = Titulo
-
+        frm.Size = parent.Size
         frm.Controls.Add(vista)
         Return frm
 
@@ -122,6 +127,28 @@ Module General
         End Try
 
     End Function
+
+    Public Function fcn_Confirmacion(ByVal texto As String, owner As Form) As Boolean
+        Try
+            Dim action As New FlyoutAction()
+            action.Caption = "Confirme"
+            action.Description = texto
+            action.Commands.Add(FlyoutCommand.OK)
+            action.Commands.Add(FlyoutCommand.Cancel)
+            If FlyoutDialog.Show(owner, action) = DialogResult.OK Then
+                Return True
+            Else
+                Return False
+            End If
+
+        Catch ex As Exception
+            GlobalErrorDesc = ex.ToString
+            Return False
+        End Try
+
+    End Function
+
+
 
     Public Sub EnviarGmail(ByVal Subject As String, ByVal Body As String, ByVal Destino As String)
         GmailEmisor = "sistemaarespos@gmail.com"

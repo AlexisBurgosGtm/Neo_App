@@ -87,7 +87,7 @@ Partial Class Main
         Me.RibbonControl1.MaxItemId = 2
         Me.RibbonControl1.Name = "RibbonControl1"
         Me.RibbonControl1.ShowToolbarCustomizeItem = False
-        Me.RibbonControl1.Size = New System.Drawing.Size(1011, 71)
+        Me.RibbonControl1.Size = New System.Drawing.Size(1037, 49)
         Me.RibbonControl1.StatusBar = Me.RibbonStatusBar1
         Me.RibbonControl1.Toolbar.ShowCustomizeItem = False
         '
@@ -101,21 +101,21 @@ Partial Class Main
         'RibbonStatusBar1
         '
         Me.RibbonStatusBar1.ItemLinks.Add(Me.SkinRibbonGalleryBarItem1)
-        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 661)
+        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 677)
         Me.RibbonStatusBar1.Name = "RibbonStatusBar1"
         Me.RibbonStatusBar1.Ribbon = Me.RibbonControl1
-        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1011, 39)
+        Me.RibbonStatusBar1.Size = New System.Drawing.Size(1037, 23)
         '
         'NAVFRAM_INICIO
         '
         Me.NAVFRAM_INICIO.Controls.Add(Me.np_login)
         Me.NAVFRAM_INICIO.Controls.Add(Me.np_inicio)
         Me.NAVFRAM_INICIO.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.NAVFRAM_INICIO.Location = New System.Drawing.Point(0, 71)
+        Me.NAVFRAM_INICIO.Location = New System.Drawing.Point(0, 49)
         Me.NAVFRAM_INICIO.Name = "NAVFRAM_INICIO"
         Me.NAVFRAM_INICIO.Pages.AddRange(New DevExpress.XtraBars.Navigation.NavigationPageBase() {Me.np_login, Me.np_inicio})
         Me.NAVFRAM_INICIO.SelectedPage = Me.np_login
-        Me.NAVFRAM_INICIO.Size = New System.Drawing.Size(1011, 590)
+        Me.NAVFRAM_INICIO.Size = New System.Drawing.Size(1037, 628)
         Me.NAVFRAM_INICIO.TabIndex = 2
         Me.NAVFRAM_INICIO.Text = "NavigationFrame1"
         Me.NAVFRAM_INICIO.TransitionAnimationProperties.FrameCount = 500
@@ -128,7 +128,7 @@ Partial Class Main
         Me.np_login.Controls.Add(Me.PictureBox1)
         Me.np_login.Font = New System.Drawing.Font("Tahoma", 12.0!)
         Me.np_login.Name = "np_login"
-        Me.np_login.Size = New System.Drawing.Size(1011, 590)
+        Me.np_login.Size = New System.Drawing.Size(1037, 628)
         '
         'GroupControl1
         '
@@ -215,7 +215,7 @@ Partial Class Main
         Me.np_inicio.Controls.Add(Me.PictureBox2)
         Me.np_inicio.Controls.Add(Me.TileControl1)
         Me.np_inicio.Name = "np_inicio"
-        Me.np_inicio.Size = New System.Drawing.Size(1011, 590)
+        Me.np_inicio.Size = New System.Drawing.Size(1037, 628)
         '
         'btnConfig
         '
@@ -467,13 +467,13 @@ Partial Class Main
         'DefaultLookAndFeel1
         '
         Me.DefaultLookAndFeel1.EnableBonusSkins = True
-        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Metropolis Dark"
+        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "The Asphalt World"
         '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1011, 700)
+        Me.ClientSize = New System.Drawing.Size(1037, 700)
         Me.Controls.Add(Me.NAVFRAM_INICIO)
         Me.Controls.Add(Me.RibbonStatusBar1)
         Me.Controls.Add(Me.RibbonControl1)

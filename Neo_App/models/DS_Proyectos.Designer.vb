@@ -27,6 +27,8 @@ Partial Public Class DS_Proyectos
     
     Private tablectrcal_Proyectos As ctrcal_ProyectosDataTable
     
+    Private tabletblTempChequeo As tblTempChequeoDataTable
+    
     Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -59,6 +61,9 @@ Partial Public Class DS_Proyectos
             If (Not (ds.Tables("ctrcal_Proyectos")) Is Nothing) Then
                 MyBase.Tables.Add(New ctrcal_ProyectosDataTable(ds.Tables("ctrcal_Proyectos")))
             End If
+            If (Not (ds.Tables("tblTempChequeo")) Is Nothing) Then
+                MyBase.Tables.Add(New tblTempChequeoDataTable(ds.Tables("tblTempChequeo")))
+            End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
             Me.Namespace = ds.Namespace
@@ -83,6 +88,16 @@ Partial Public Class DS_Proyectos
     Public ReadOnly Property ctrcal_Proyectos() As ctrcal_ProyectosDataTable
         Get
             Return Me.tablectrcal_Proyectos
+        End Get
+    End Property
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+     Global.System.ComponentModel.Browsable(false),  _
+     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
+    Public ReadOnly Property tblTempChequeo() As tblTempChequeoDataTable
+        Get
+            Return Me.tabletblTempChequeo
         End Get
     End Property
     
@@ -156,6 +171,9 @@ Partial Public Class DS_Proyectos
             If (Not (ds.Tables("ctrcal_Proyectos")) Is Nothing) Then
                 MyBase.Tables.Add(New ctrcal_ProyectosDataTable(ds.Tables("ctrcal_Proyectos")))
             End If
+            If (Not (ds.Tables("tblTempChequeo")) Is Nothing) Then
+                MyBase.Tables.Add(New tblTempChequeoDataTable(ds.Tables("tblTempChequeo")))
+            End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
             Me.Namespace = ds.Namespace
@@ -194,6 +212,12 @@ Partial Public Class DS_Proyectos
                 Me.tablectrcal_Proyectos.InitVars
             End If
         End If
+        Me.tabletblTempChequeo = CType(MyBase.Tables("tblTempChequeo"),tblTempChequeoDataTable)
+        If (initTable = true) Then
+            If (Not (Me.tabletblTempChequeo) Is Nothing) Then
+                Me.tabletblTempChequeo.InitVars
+            End If
+        End If
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -206,11 +230,19 @@ Partial Public Class DS_Proyectos
         Me.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
         Me.tablectrcal_Proyectos = New ctrcal_ProyectosDataTable()
         MyBase.Tables.Add(Me.tablectrcal_Proyectos)
+        Me.tabletblTempChequeo = New tblTempChequeoDataTable()
+        MyBase.Tables.Add(Me.tabletblTempChequeo)
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Private Function ShouldSerializectrcal_Proyectos() As Boolean
+        Return false
+    End Function
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Private Function ShouldSerializetblTempChequeo() As Boolean
         Return false
     End Function
     
@@ -274,6 +306,9 @@ Partial Public Class DS_Proyectos
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Delegate Sub ctrcal_ProyectosRowChangeEventHandler(ByVal sender As Object, ByVal e As ctrcal_ProyectosRowChangeEvent)
+    
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Delegate Sub tblTempChequeoRowChangeEventHandler(ByVal sender As Object, ByVal e As tblTempChequeoRowChangeEvent)
     
     '''<summary>
     '''Represents the strongly named DataTable class.
@@ -505,12 +540,6 @@ Partial Public Class DS_Proyectos
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByCodigo(ByVal Codigo As String) As ctrcal_ProyectosRow
-            Return CType(Me.Rows.Find(New Object() {Codigo}),ctrcal_ProyectosRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As ctrcal_ProyectosDataTable = CType(MyBase.Clone,ctrcal_ProyectosDataTable)
             cln.InitVars
@@ -573,12 +602,12 @@ Partial Public Class DS_Proyectos
             MyBase.Columns.Add(Me.columnCodStatus)
             Me.columnLastUpdate = New Global.System.Data.DataColumn("LastUpdate", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnLastUpdate)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnCodigo}, true))
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("ctrcal_ProyectosKey1", New Global.System.Data.DataColumn() {Me.columnCodProyecto}, false))
             Me.columnCodProyecto.AutoIncrement = true
             Me.columnCodProyecto.AutoIncrementSeed = -1
             Me.columnCodProyecto.AutoIncrementStep = -1
+            Me.columnCodProyecto.Unique = true
             Me.columnCodigo.AllowDBNull = false
-            Me.columnCodigo.Unique = true
             Me.columnCodigo.MaxLength = 255
             Me.columnDescripcion.MaxLength = 255
             Me.columnDireccion.MaxLength = 255
@@ -670,6 +699,349 @@ Partial Public Class DS_Proyectos
             Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
             attribute2.Name = "tableTypeName"
             attribute2.FixedValue = "ctrcal_ProyectosDataTable"
+            type.Attributes.Add(attribute2)
+            type.Particle = sequence
+            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
+            If xs.Contains(dsSchema.TargetNamespace) Then
+                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Try 
+                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
+                    dsSchema.Write(s1)
+                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
+                    Do While schemas.MoveNext
+                        schema = CType(schemas.Current,Global.System.Xml.Schema.XmlSchema)
+                        s2.SetLength(0)
+                        schema.Write(s2)
+                        If (s1.Length = s2.Length) Then
+                            s1.Position = 0
+                            s2.Position = 0
+                            
+                            Do While ((s1.Position <> s1.Length)  _
+                                        AndAlso (s1.ReadByte = s2.ReadByte))
+                                
+                                
+                            Loop
+                            If (s1.Position = s1.Length) Then
+                                Return type
+                            End If
+                        End If
+                        
+                    Loop
+                Finally
+                    If (Not (s1) Is Nothing) Then
+                        s1.Close
+                    End If
+                    If (Not (s2) Is Nothing) Then
+                        s2.Close
+                    End If
+                End Try
+            End If
+            xs.Add(dsSchema)
+            Return type
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the strongly named DataTable class.
+    '''</summary>
+    <Global.System.Serializable(),  _
+     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
+    Partial Public Class tblTempChequeoDataTable
+        Inherits Global.System.Data.TypedTableBase(Of tblTempChequeoRow)
+        
+        Private columnCODPROCESO As Global.System.Data.DataColumn
+        
+        Private columnDESPROCESO As Global.System.Data.DataColumn
+        
+        Private columnCODETAPA As Global.System.Data.DataColumn
+        
+        Private columnDESETAPA As Global.System.Data.DataColumn
+        
+        Private columnCODCAMPO As Global.System.Data.DataColumn
+        
+        Private columnDESCAMPO As Global.System.Data.DataColumn
+        
+        Private columnCODCALIFICACION As Global.System.Data.DataColumn
+        
+        Private columnDESCALIFICACION As Global.System.Data.DataColumn
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.TableName = "tblTempChequeo"
+            Me.BeginInit
+            Me.InitClass
+            Me.EndInit
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal table As Global.System.Data.DataTable)
+            MyBase.New
+            Me.TableName = table.TableName
+            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
+                Me.CaseSensitive = table.CaseSensitive
+            End If
+            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
+                Me.Locale = table.Locale
+            End If
+            If (table.Namespace <> table.DataSet.Namespace) Then
+                Me.Namespace = table.Namespace
+            End If
+            Me.Prefix = table.Prefix
+            Me.MinimumCapacity = table.MinimumCapacity
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
+            MyBase.New(info, context)
+            Me.InitVars
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property CODPROCESOColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCODPROCESO
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property DESPROCESOColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnDESPROCESO
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property CODETAPAColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCODETAPA
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property DESETAPAColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnDESETAPA
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property CODCAMPOColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCODCAMPO
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property DESCAMPOColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnDESCAMPO
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property CODCALIFICACIONColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCODCALIFICACION
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property DESCALIFICACIONColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnDESCALIFICACION
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Browsable(false)>  _
+        Public ReadOnly Property Count() As Integer
+            Get
+                Return Me.Rows.Count
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Default ReadOnly Property Item(ByVal index As Integer) As tblTempChequeoRow
+            Get
+                Return CType(Me.Rows(index),tblTempChequeoRow)
+            End Get
+        End Property
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event tblTempChequeoRowChanging As tblTempChequeoRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event tblTempChequeoRowChanged As tblTempChequeoRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event tblTempChequeoRowDeleting As tblTempChequeoRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event tblTempChequeoRowDeleted As tblTempChequeoRowChangeEventHandler
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Sub AddtblTempChequeoRow(ByVal row As tblTempChequeoRow)
+            Me.Rows.Add(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Function AddtblTempChequeoRow(ByVal CODPROCESO As Integer, ByVal DESPROCESO As String, ByVal CODETAPA As Integer, ByVal DESETAPA As String, ByVal CODCAMPO As Integer, ByVal DESCAMPO As String, ByVal CODCALIFICACION As Integer, ByVal DESCALIFICACION As String) As tblTempChequeoRow
+            Dim rowtblTempChequeoRow As tblTempChequeoRow = CType(Me.NewRow,tblTempChequeoRow)
+            Dim columnValuesArray() As Object = New Object() {CODPROCESO, DESPROCESO, CODETAPA, DESETAPA, CODCAMPO, DESCAMPO, CODCALIFICACION, DESCALIFICACION}
+            rowtblTempChequeoRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowtblTempChequeoRow)
+            Return rowtblTempChequeoRow
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overrides Function Clone() As Global.System.Data.DataTable
+            Dim cln As tblTempChequeoDataTable = CType(MyBase.Clone,tblTempChequeoDataTable)
+            cln.InitVars
+            Return cln
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
+            Return New tblTempChequeoDataTable()
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub InitVars()
+            Me.columnCODPROCESO = MyBase.Columns("CODPROCESO")
+            Me.columnDESPROCESO = MyBase.Columns("DESPROCESO")
+            Me.columnCODETAPA = MyBase.Columns("CODETAPA")
+            Me.columnDESETAPA = MyBase.Columns("DESETAPA")
+            Me.columnCODCAMPO = MyBase.Columns("CODCAMPO")
+            Me.columnDESCAMPO = MyBase.Columns("DESCAMPO")
+            Me.columnCODCALIFICACION = MyBase.Columns("CODCALIFICACION")
+            Me.columnDESCALIFICACION = MyBase.Columns("DESCALIFICACION")
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitClass()
+            Me.columnCODPROCESO = New Global.System.Data.DataColumn("CODPROCESO", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCODPROCESO)
+            Me.columnDESPROCESO = New Global.System.Data.DataColumn("DESPROCESO", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnDESPROCESO)
+            Me.columnCODETAPA = New Global.System.Data.DataColumn("CODETAPA", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCODETAPA)
+            Me.columnDESETAPA = New Global.System.Data.DataColumn("DESETAPA", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnDESETAPA)
+            Me.columnCODCAMPO = New Global.System.Data.DataColumn("CODCAMPO", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCODCAMPO)
+            Me.columnDESCAMPO = New Global.System.Data.DataColumn("DESCAMPO", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnDESCAMPO)
+            Me.columnCODCALIFICACION = New Global.System.Data.DataColumn("CODCALIFICACION", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCODCALIFICACION)
+            Me.columnDESCALIFICACION = New Global.System.Data.DataColumn("DESCALIFICACION", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnDESCALIFICACION)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function NewtblTempChequeoRow() As tblTempChequeoRow
+            Return CType(Me.NewRow,tblTempChequeoRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
+            Return New tblTempChequeoRow(builder)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function GetRowType() As Global.System.Type
+            Return GetType(tblTempChequeoRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanged(e)
+            If (Not (Me.tblTempChequeoRowChangedEvent) Is Nothing) Then
+                RaiseEvent tblTempChequeoRowChanged(Me, New tblTempChequeoRowChangeEvent(CType(e.Row,tblTempChequeoRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanging(e)
+            If (Not (Me.tblTempChequeoRowChangingEvent) Is Nothing) Then
+                RaiseEvent tblTempChequeoRowChanging(Me, New tblTempChequeoRowChangeEvent(CType(e.Row,tblTempChequeoRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleted(e)
+            If (Not (Me.tblTempChequeoRowDeletedEvent) Is Nothing) Then
+                RaiseEvent tblTempChequeoRowDeleted(Me, New tblTempChequeoRowChangeEvent(CType(e.Row,tblTempChequeoRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleting(e)
+            If (Not (Me.tblTempChequeoRowDeletingEvent) Is Nothing) Then
+                RaiseEvent tblTempChequeoRowDeleting(Me, New tblTempChequeoRowChangeEvent(CType(e.Row,tblTempChequeoRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub RemovetblTempChequeoRow(ByVal row As tblTempChequeoRow)
+            Me.Rows.Remove(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
+            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
+            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
+            Dim ds As DS_Proyectos = New DS_Proyectos()
+            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
+            any1.MinOccurs = New Decimal(0)
+            any1.MaxOccurs = Decimal.MaxValue
+            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any1)
+            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
+            any2.MinOccurs = New Decimal(1)
+            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any2)
+            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute1.Name = "namespace"
+            attribute1.FixedValue = ds.Namespace
+            type.Attributes.Add(attribute1)
+            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute2.Name = "tableTypeName"
+            attribute2.FixedValue = "tblTempChequeoDataTable"
             type.Attributes.Add(attribute2)
             type.Particle = sequence
             Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
@@ -1093,6 +1465,238 @@ Partial Public Class DS_Proyectos
     End Class
     
     '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class tblTempChequeoRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tabletblTempChequeo As tblTempChequeoDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tabletblTempChequeo = CType(Me.Table,tblTempChequeoDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property CODPROCESO() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tabletblTempChequeo.CODPROCESOColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'CODPROCESO' de la tabla 'tblTempChequeo' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletblTempChequeo.CODPROCESOColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property DESPROCESO() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletblTempChequeo.DESPROCESOColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'DESPROCESO' de la tabla 'tblTempChequeo' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletblTempChequeo.DESPROCESOColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property CODETAPA() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tabletblTempChequeo.CODETAPAColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'CODETAPA' de la tabla 'tblTempChequeo' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletblTempChequeo.CODETAPAColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property DESETAPA() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletblTempChequeo.DESETAPAColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'DESETAPA' de la tabla 'tblTempChequeo' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletblTempChequeo.DESETAPAColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property CODCAMPO() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tabletblTempChequeo.CODCAMPOColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'CODCAMPO' de la tabla 'tblTempChequeo' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletblTempChequeo.CODCAMPOColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property DESCAMPO() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletblTempChequeo.DESCAMPOColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'DESCAMPO' de la tabla 'tblTempChequeo' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletblTempChequeo.DESCAMPOColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property CODCALIFICACION() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tabletblTempChequeo.CODCALIFICACIONColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'CODCALIFICACION' de la tabla 'tblTempChequeo' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletblTempChequeo.CODCALIFICACIONColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property DESCALIFICACION() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletblTempChequeo.DESCALIFICACIONColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'DESCALIFICACION' de la tabla 'tblTempChequeo' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletblTempChequeo.DESCALIFICACIONColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCODPROCESONull() As Boolean
+            Return Me.IsNull(Me.tabletblTempChequeo.CODPROCESOColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCODPROCESONull()
+            Me(Me.tabletblTempChequeo.CODPROCESOColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsDESPROCESONull() As Boolean
+            Return Me.IsNull(Me.tabletblTempChequeo.DESPROCESOColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetDESPROCESONull()
+            Me(Me.tabletblTempChequeo.DESPROCESOColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCODETAPANull() As Boolean
+            Return Me.IsNull(Me.tabletblTempChequeo.CODETAPAColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCODETAPANull()
+            Me(Me.tabletblTempChequeo.CODETAPAColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsDESETAPANull() As Boolean
+            Return Me.IsNull(Me.tabletblTempChequeo.DESETAPAColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetDESETAPANull()
+            Me(Me.tabletblTempChequeo.DESETAPAColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCODCAMPONull() As Boolean
+            Return Me.IsNull(Me.tabletblTempChequeo.CODCAMPOColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCODCAMPONull()
+            Me(Me.tabletblTempChequeo.CODCAMPOColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsDESCAMPONull() As Boolean
+            Return Me.IsNull(Me.tabletblTempChequeo.DESCAMPOColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetDESCAMPONull()
+            Me(Me.tabletblTempChequeo.DESCAMPOColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCODCALIFICACIONNull() As Boolean
+            Return Me.IsNull(Me.tabletblTempChequeo.CODCALIFICACIONColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCODCALIFICACIONNull()
+            Me(Me.tabletblTempChequeo.CODCALIFICACIONColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsDESCALIFICACIONNull() As Boolean
+            Return Me.IsNull(Me.tabletblTempChequeo.DESCALIFICACIONColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetDESCALIFICACIONNull()
+            Me(Me.tabletblTempChequeo.DESCALIFICACIONColumn) = Global.System.Convert.DBNull
+        End Sub
+    End Class
+    
+    '''<summary>
     '''Row event argument class
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -1114,6 +1718,42 @@ Partial Public Class DS_Proyectos
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public ReadOnly Property Row() As ctrcal_ProyectosRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class tblTempChequeoRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As tblTempChequeoRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As tblTempChequeoRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As tblTempChequeoRow
             Get
                 Return Me.eventRow
             End Get
@@ -1861,40 +2501,6 @@ Namespace DS_ProyectosTableAdapters
                     Me.Adapter.UpdateCommand.Connection.Close
                 End If
             End Try
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update( _
-                    ByVal Descripcion As String,  _
-                    ByVal Direccion As String,  _
-                    ByVal CodMunicipio As Global.System.Nullable(Of Integer),  _
-                    ByVal CodDepartamento As Global.System.Nullable(Of Integer),  _
-                    ByVal FechaInicio As Global.System.Nullable(Of Date),  _
-                    ByVal FechaFinaliza As Global.System.Nullable(Of Date),  _
-                    ByVal CodContacto As Global.System.Nullable(Of Integer),  _
-                    ByVal Duracion As String,  _
-                    ByVal CodPrioridad As Global.System.Nullable(Of Integer),  _
-                    ByVal Obs As String,  _
-                    ByVal CodStatus As Global.System.Nullable(Of Integer),  _
-                    ByVal LastUpdate As Global.System.Nullable(Of Date),  _
-                    ByVal Original_CodProyecto As Integer,  _
-                    ByVal Original_Codigo As String,  _
-                    ByVal Original_Descripcion As String,  _
-                    ByVal Original_Direccion As String,  _
-                    ByVal Original_CodMunicipio As Global.System.Nullable(Of Integer),  _
-                    ByVal Original_CodDepartamento As Global.System.Nullable(Of Integer),  _
-                    ByVal Original_FechaInicio As Global.System.Nullable(Of Date),  _
-                    ByVal Original_FechaFinaliza As Global.System.Nullable(Of Date),  _
-                    ByVal Original_CodContacto As Global.System.Nullable(Of Integer),  _
-                    ByVal Original_Duracion As String,  _
-                    ByVal Original_CodPrioridad As Global.System.Nullable(Of Integer),  _
-                    ByVal Original_Obs As String,  _
-                    ByVal Original_CodStatus As Global.System.Nullable(Of Integer),  _
-                    ByVal Original_LastUpdate As Global.System.Nullable(Of Date)) As Integer
-            Return Me.Update(Original_Codigo, Descripcion, Direccion, CodMunicipio, CodDepartamento, FechaInicio, FechaFinaliza, CodContacto, Duracion, CodPrioridad, Obs, CodStatus, LastUpdate, Original_CodProyecto, Original_Codigo, Original_Descripcion, Original_Direccion, Original_CodMunicipio, Original_CodDepartamento, Original_FechaInicio, Original_FechaFinaliza, Original_CodContacto, Original_Duracion, Original_CodPrioridad, Original_Obs, Original_CodStatus, Original_LastUpdate)
         End Function
     End Class
     

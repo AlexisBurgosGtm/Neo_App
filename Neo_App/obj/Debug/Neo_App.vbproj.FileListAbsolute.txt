@@ -208,7 +208,6 @@ C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\de\DevEx
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\es\DevExpress.Office.v16.1.Core.resources.dll
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\ja\DevExpress.Office.v16.1.Core.resources.dll
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\ru\DevExpress.Office.v16.1.Core.resources.dll
-C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.vbprojResolveAssemblyReference.cache
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.Main.resources
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.Resources.resources
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.vbproj.GenerateResource.Cache
@@ -216,3 +215,16 @@ C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\NeoApp.e
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\NeoApp.exe.config
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.index.resources
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.view_list_proyectos.resources
+C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\DevExpress.XtraGauges.v16.1.Core.dll
+C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\DevExpress.XtraGauges.v16.1.Win.dll
+C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\DevExpress.XtraGauges.v16.1.Core.xml
+C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\DevExpress.XtraGauges.v16.1.Win.xml
+C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\de\DevExpress.XtraGauges.v16.1.Core.resources.dll
+C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\es\DevExpress.XtraGauges.v16.1.Core.resources.dll
+C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\ja\DevExpress.XtraGauges.v16.1.Core.resources.dll
+C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\ru\DevExpress.XtraGauges.v16.1.Core.resources.dll
+C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.view_new_proyecto.resources
+C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.IntroSplash.resources
+C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.view_login.resources
+C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.view_operation_chequeo.resources
+C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.view_cron_actividades.resources
