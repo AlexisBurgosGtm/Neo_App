@@ -40,6 +40,7 @@ Module General
 
     End Function
 
+
     Public Function fcn_MostrarVista(ByVal vista As Object, ByVal parent As Form, ByVal Titulo As String) As Form
         Dim frm As New Form
         frm.MdiParent = parent

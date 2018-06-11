@@ -19,8 +19,9 @@ Partial Class index
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(index))
-        Me.XtraTabbedMdiManager1 = New DevExpress.XtraTabbedMdi.XtraTabbedMdiManager()
+        Me.XtraTabbedMdiManager1 = New DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(Me.components)
         Me.TabFormDefaultManager1 = New DevExpress.XtraBars.TabFormDefaultManager()
         Me.barDockControlTop = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
@@ -34,8 +35,8 @@ Partial Class index
         Me.RibbonControl1 = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.Skins = New DevExpress.XtraBars.SkinRibbonGalleryBarItem()
         Me.BarLinkContainerItem1 = New DevExpress.XtraBars.BarLinkContainerItem()
-        Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel()
-        Me.AccordionControl1 = New DevExpress.XtraBars.Navigation.AccordionControl()
+        Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
+        Me.Menu_Acordion = New DevExpress.XtraBars.Navigation.AccordionControl()
         Me.AccordionControlElement4 = New DevExpress.XtraBars.Navigation.AccordionControlElement()
         Me.btnInicioProyectosCurso = New DevExpress.XtraBars.Navigation.AccordionControlElement()
         Me.AccordionControlElement2 = New DevExpress.XtraBars.Navigation.AccordionControlElement()
@@ -63,7 +64,7 @@ Partial Class index
         CType(Me.XtraTabbedMdiManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TabFormDefaultManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AccordionControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Menu_Acordion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'XtraTabbedMdiManager1
@@ -187,17 +188,17 @@ Partial Class index
         '
         Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Black"
         '
-        'AccordionControl1
+        'Menu_Acordion
         '
-        Me.AccordionControl1.AnimationType = DevExpress.XtraBars.Navigation.AnimationType.Office2016
-        Me.AccordionControl1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.AccordionControl1.Elements.AddRange(New DevExpress.XtraBars.Navigation.AccordionControlElement() {Me.AccordionControlElement4, Me.AccordionControlElement2, Me.AccordionControlElement15, Me.AccordionControlElement1, Me.AccordionControlElement19, Me.AccordionControlElement3})
-        Me.AccordionControl1.Location = New System.Drawing.Point(0, 29)
-        Me.AccordionControl1.Name = "AccordionControl1"
-        Me.AccordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Hidden
-        Me.AccordionControl1.Size = New System.Drawing.Size(170, 695)
-        Me.AccordionControl1.TabIndex = 22
-        Me.AccordionControl1.Text = "AccordionControl1"
+        Me.Menu_Acordion.AnimationType = DevExpress.XtraBars.Navigation.AnimationType.Office2016
+        Me.Menu_Acordion.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Menu_Acordion.Elements.AddRange(New DevExpress.XtraBars.Navigation.AccordionControlElement() {Me.AccordionControlElement4, Me.AccordionControlElement2, Me.AccordionControlElement15, Me.AccordionControlElement1, Me.AccordionControlElement19, Me.AccordionControlElement3})
+        Me.Menu_Acordion.Location = New System.Drawing.Point(0, 29)
+        Me.Menu_Acordion.Name = "Menu_Acordion"
+        Me.Menu_Acordion.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Hidden
+        Me.Menu_Acordion.Size = New System.Drawing.Size(170, 695)
+        Me.Menu_Acordion.TabIndex = 22
+        Me.Menu_Acordion.Text = "AccordionControl1"
         '
         'AccordionControlElement4
         '
@@ -362,7 +363,7 @@ Partial Class index
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1198, 747)
-        Me.Controls.Add(Me.AccordionControl1)
+        Me.Controls.Add(Me.Menu_Acordion)
         Me.Controls.Add(Me.RibbonStatusBar1)
         Me.Controls.Add(Me.RibbonControl1)
         Me.Controls.Add(Me.barDockControlLeft)
@@ -383,7 +384,7 @@ Partial Class index
         CType(Me.XtraTabbedMdiManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TabFormDefaultManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AccordionControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Menu_Acordion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -398,7 +399,7 @@ Partial Class index
     Friend WithEvents RibbonControl1 As DevExpress.XtraBars.Ribbon.RibbonControl
     Friend WithEvents Skins As DevExpress.XtraBars.SkinRibbonGalleryBarItem
     Friend WithEvents DefaultLookAndFeel1 As DevExpress.LookAndFeel.DefaultLookAndFeel
-    Friend WithEvents AccordionControl1 As DevExpress.XtraBars.Navigation.AccordionControl
+    Friend WithEvents Menu_Acordion As DevExpress.XtraBars.Navigation.AccordionControl
     Friend WithEvents btnInicioProyectosCurso As DevExpress.XtraBars.Navigation.AccordionControlElement
     Friend WithEvents AccordionControlElement2 As DevExpress.XtraBars.Navigation.AccordionControlElement
     Friend WithEvents AccordionControlElement7 As DevExpress.XtraBars.Navigation.AccordionControlElement

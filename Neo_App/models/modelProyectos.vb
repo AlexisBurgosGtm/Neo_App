@@ -13,6 +13,30 @@ Public Class modelProyectos
     Dim CodProyecto As Integer
 
 
+    Public Function double_Correlativo_ControlCalidad() As Double
+
+        If Global_TipoConexion = "ACCESS" Then
+            Call fcn_AbrirConexion()
+            Try
+                Dim cmd As New OleDbCommand("SELECT CORRELATIVO FROM GEN_TIPODOCUMENTOS WHERE ID=1", cn)
+                Dim dr As OleDbDataReader = cmd.ExecuteReader
+                dr.Read()
+                If dr.HasRows Then
+                    Return Double.Parse(dr(0))
+                End If
+                dr.Close()
+                cmd.Dispose()
+            Catch ex As Exception
+                Return 0
+            End Try
+
+            cn.Close()
+
+        End If
+
+    End Function
+
+
     Public Function fcn_SelectProyectos() As DataTable
 
         If Global_TipoConexion = "ACCESS" Then

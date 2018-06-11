@@ -90,12 +90,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="General.vb" />
-    <Compile Include="Main.Designer.vb">
-      <DependentUpon>Main.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Main.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="models\DS_Proyectos.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -167,9 +161,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -310,6 +301,8 @@
     <Content Include="Interfaz\js\material.min.js" />
     <Content Include="Interfaz\js\ripples.min.js" />
     <Content Include="Interfaz\js\sweetalert2.min.js" />
+    <Content Include="views\test.html" />
+    <None Include="Resources\bt19.png" />
     <None Include="Resources\feature.settings.png" />
     <None Include="Resources\bt20.png" />
     <None Include="Resources\btnConfig.png" />

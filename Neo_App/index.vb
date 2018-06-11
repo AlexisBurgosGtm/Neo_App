@@ -34,14 +34,16 @@ Public Class index
             'carga el listado de proyectos
             Call fcn_MostrarVista(New view_list_proyectos, Me, "Proyectos").Show()
             'muestra el acordeon
-            Me.AccordionControl1.Visible = True
+            Me.Menu_Acordion.Visible = True
 
         Else
             'muestra el acordeon
-            Me.AccordionControl1.Visible = False
+            Me.Menu_Acordion.Visible = False
         End If
 
     End Sub
+
+
 
     'carga una vista como operación mdi para gestionar más de una
     'tarea a la vez
@@ -56,8 +58,6 @@ Public Class index
 
 
 
-
-
 #Region " ** MENU PRINCIPAL ** "
 
     Private Sub btnInicioProyectosCurso_Click(sender As Object, e As EventArgs) Handles btnInicioProyectosCurso.Click
@@ -69,25 +69,20 @@ Public Class index
     End Sub
 
 
-    Private Sub btnSkin_Caramel_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSkin_Caramel.ItemClick
-        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Caramel"
-    End Sub
-
-    Private Sub btnSkin_Foggy_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSkin_Foggy.ItemClick
-        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Foggy"
-    End Sub
-
-
-    Private Sub btnSkin_Black_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSkin_Black.ItemClick
-        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Black"
-    End Sub
-
-
-
 
 #End Region
 
-
+#Region " ** SKINS ** "
+    Private Sub btnSkin_Caramel_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSkin_Caramel.ItemClick
+        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Caramel"
+    End Sub
+    Private Sub btnSkin_Foggy_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSkin_Foggy.ItemClick
+        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Foggy"
+    End Sub
+    Private Sub btnSkin_Black_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSkin_Black.ItemClick
+        Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Black"
+    End Sub
+#End Region
 
 
 End Class

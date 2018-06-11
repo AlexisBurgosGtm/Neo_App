@@ -25,7 +25,7 @@ Public Class view_list_proyectos
     End Sub
 
     'BOTÓN NUEVO
-    Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
+    Private Sub btnNuevo_Click(sender As Object, e As EventArgs)
         If FlyoutDialog.Show(Me.ParentForm, New view_new_proyecto("NUEVO")) = DialogResult.OK Then
             MsgBox("Proyecto Creado Exitosamente")
             Call CargarGrid()
@@ -67,11 +67,6 @@ Public Class view_list_proyectos
             global_CodProyecto = CType(drw.Item(0), Integer)
             global_DesProyecto = drw.Item(2).ToString
 
-            'agrega los títulos
-            Me.lbChequeProyecto.Text = global_DesProyecto
-            Me.lbCronogramaProyecto.Text = global_DesProyecto
-            Me.lbPresupuestoProyecto.Text = global_DesProyecto
-
 
             Me.lbDesProyecto.Text = drw.Item(2).ToString
 
@@ -85,22 +80,33 @@ Public Class view_list_proyectos
         End Try
     End Sub
 
+    Private Function fcn_MostrarVistaLocal(ByVal view As Object, ByVal parent As Form, ByVal Titulo As String) As Boolean
+        Dim frm As New Form
+        frm.Size = view.size
+        frm.Controls.Add(view)
+        frm.Text = Titulo
+        frm.MdiParent = parent
+        frm.Show()
+    End Function
+
+
     'PANEL DE LAS OPCIONES DEL PROYECTO
     Private Sub WindowsUIButtonPanelOpciones_ButtonClick(sender As Object, e As ButtonEventArgs) Handles WindowsUIButtonPanelOpciones.ButtonClick
         Try
-
 
             Dim tag As String = CType(e.Button, WindowsUIButton).Tag.ToString()
             Select Case tag
 
                 Case "CHEQUEO"
-
-                    Me.NavFrameProyectos.SelectedPage = NP_Chequeo
+                    Call fcn_MostrarVistaLocal(New view_operation_chequeo(global_CodProyecto, global_DesProyecto), index, "Control de Calidad")
+                'Me.NavFrameProyectos.SelectedPage = NP_Chequeo
 
                 Case "PRESUPUESTO"
-                    Me.NavFrameProyectos.SelectedPage = NP_Presupuesto
+
+
                 Case "CRONOGRAMA"
-                    Me.NavFrameProyectos.SelectedPage = Np_Cronograma
+
+
             End Select
 
         Catch ex As Exception
@@ -109,15 +115,24 @@ Public Class view_list_proyectos
 
     End Sub
 
-    Private Sub btnAtras_Click(sender As Object, e As EventArgs) Handles btnAtras.Click
-        Me.NavFrameProyectos.SelectedPage = NP_Listado
+    Private Sub WindowsUIButtonPanel1_ButtonClick(sender As Object, e As ButtonEventArgs) Handles WindowsUIButtonPanel1.ButtonClick
+        Try
+
+            Dim tag As String = CType(e.Button, WindowsUIButton).Tag.ToString()
+            Select Case tag
+
+                Case "NUEVO"
+                    If FlyoutDialog.Show(Me.ParentForm, New view_new_proyecto("NUEVO")) = DialogResult.OK Then
+                        MsgBox("Proyecto Creado Exitosamente")
+                        Call CargarGrid()
+                    End If
+            End Select
+
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
     End Sub
 
-    Private Sub btnCronogramaAtras_Click(sender As Object, e As EventArgs) Handles btnCronogramaAtras.Click
-        Me.NavFrameProyectos.SelectedPage = NP_Listado
-    End Sub
 
-    Private Sub btnPresupuestAtras_Click(sender As Object, e As EventArgs) Handles btnPresupuestAtras.Click
-        Me.NavFrameProyectos.SelectedPage = NP_Listado
-    End Sub
+
 End Class

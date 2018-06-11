@@ -208,7 +208,6 @@ C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\de\DevEx
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\es\DevExpress.Office.v16.1.Core.resources.dll
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\ja\DevExpress.Office.v16.1.Core.resources.dll
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\bin\Debug\ru\DevExpress.Office.v16.1.Core.resources.dll
-C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.Main.resources
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.Resources.resources
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.vbproj.GenerateResource.Cache
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\NeoApp.exe.licenses
@@ -228,3 +227,4 @@ C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.view_login.resources
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.view_operation_chequeo.resources
 C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.view_cron_actividades.resources
+C:\ARCHIVOS ALEXIS\MINI DISCO\NEO NEW PROYECT\Neo_App\Neo_App\obj\Debug\Neo_App.vbprojResolveAssemblyReference.cache

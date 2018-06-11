@@ -121,11 +121,11 @@
   <data name="conceptoNeoWeb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\conceptoNeoWeb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="feature.settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\feature.settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="banner3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\banner3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnConfig" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnConfig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,11 +133,17 @@
   <data name="bt22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bt4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bt4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bt24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bt24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnConfig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnConfig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="banner4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\banner4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bt4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bt4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bt23" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,22 +154,19 @@
   <data name="btpiezas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btpiezas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bt20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bt20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btDias" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btDias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bt32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bt24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bt24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bt20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bt20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btExito" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btExito.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="feature.settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\feature.settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bt19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bt19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
