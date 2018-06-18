@@ -95,7 +95,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Proyectos.xsd</DependentUpon>
     </Compile>
+    <Compile Include="models\modelLogin.vb" />
     <Compile Include="models\modelProyectos.vb" />
+    <Compile Include="models\modelSubProyectos.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -115,6 +117,12 @@
       <DependentUpon>index.vb</DependentUpon>
     </Compile>
     <Compile Include="index.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\GlobalWaitForm.Designer.vb">
+      <DependentUpon>GlobalWaitForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\GlobalWaitForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\IntroSplash.Designer.vb">
@@ -153,6 +161,12 @@
     <Compile Include="views\view_new_proyecto.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="views\view_new_subproyectos.Designer.vb">
+      <DependentUpon>view_new_subproyectos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="views\view_new_subproyectos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="views\view_operation_chequeo.Designer.vb">
       <DependentUpon>view_operation_chequeo.vb</DependentUpon>
     </Compile>
@@ -171,6 +185,9 @@
     <EmbeddedResource Include="index.resx">
       <DependentUpon>index.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\GlobalWaitForm.resx">
+      <DependentUpon>GlobalWaitForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\IntroSplash.resx">
       <DependentUpon>IntroSplash.vb</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\view_new_proyecto.resx">
       <DependentUpon>view_new_proyecto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\view_new_subproyectos.resx">
+      <DependentUpon>view_new_subproyectos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\view_operation_chequeo.resx">
       <DependentUpon>view_operation_chequeo.vb</DependentUpon>

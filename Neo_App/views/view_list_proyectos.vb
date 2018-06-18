@@ -49,6 +49,8 @@ Public Class view_list_proyectos
                             Call CargarGrid()
                         End If
                     End If
+
+
             End Select
 
         Catch ex As Exception
@@ -96,7 +98,8 @@ Public Class view_list_proyectos
 
             Dim tag As String = CType(e.Button, WindowsUIButton).Tag.ToString()
             Select Case tag
-
+                Case "SUBPROYECTOS"
+                    Call fcn_MostrarVistaLocal(New view_new_subproyectos(global_CodProyecto), index, "SubProyectos")
                 Case "CHEQUEO"
                     Call fcn_MostrarVistaLocal(New view_operation_chequeo(global_CodProyecto, global_DesProyecto), index, "Control de Calidad")
                 'Me.NavFrameProyectos.SelectedPage = NP_Chequeo

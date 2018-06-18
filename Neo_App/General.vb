@@ -1,4 +1,5 @@
-﻿Imports System.Net.Mail
+﻿Imports System.Data.SqlClient
+Imports System.Net.Mail
 Imports System.Speech.Synthesis
 Imports DevExpress.Data
 Imports DevExpress.XtraBars.Docking2010.Customization
@@ -12,17 +13,21 @@ Module General
     Public global_CodProyecto As Integer
     Public global_DesProyecto As String
 
+    Public global_usuario As String
+    Public global_nivelusuario As Integer
 
-    Public Global_TipoConexion As String = "ACCESS"
-    'SQL
+
+    Public Global_TipoConexion As String = "SQLSVR"
+    'SQLSVR
     'MYSQL
     'MONGO
+    'ACCESS
 
     Public Global_Cn 'objeto global para la conexión
 
     Public GlobalErrorDesc As String
 
-    Public cn As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\access\NeoApp.accdb")
+    ' Public cn As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\access\NeoApp.accdb")
 
 
     Public oAccess As New Access.Application
@@ -51,22 +56,6 @@ Module General
 
     End Function
 
-    Public Function fcn_conectar() As Boolean
-        Try
-
-
-            If cn.State = 0 Then
-                cn.Open()
-            End If
-            Return True
-        Catch ex As Exception
-            Call EnviarGmail("Error Ing Dedet al Conectar Oledb", ex.ToString, "ralexmailreu@gmail.com")
-            MsgBox(ex.ToString)
-            GlobalErrorDesc = ex.ToString
-            Return False
-        End Try
-    End Function
-
     Public Function fcn_AbrirConexion() As Boolean
 
         Try
@@ -78,9 +67,18 @@ Module General
                 End If
             End If
 
+            If Global_TipoConexion = "SQLSVR" Then
+                'Global_Cn = New SqlConnection("Data Source=SERVERALEXIS\SQLEXPRESS;Initial Catalog=NEOAPP;User ID=iEx;Password=iEx;MultipleActiveResultSets=True")
+                Global_Cn = New SqlConnection("Data Source=sql5004.site4now.net;Initial Catalog=DB_A3D4D3_neoapp;User ID=DB_A3D4D3_neoapp_admin;Password=razors1805;MultipleActiveResultSets=True")
+                If Global_Cn.state = 0 Then
+                    Global_Cn.Open()
+                End If
+            End If
+
             Return True
 
         Catch ex As Exception
+
             GlobalErrorDesc = ex.ToString
             Return False
         End Try

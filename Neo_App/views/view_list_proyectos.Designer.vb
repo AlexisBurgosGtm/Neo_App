@@ -20,15 +20,15 @@ Partial Class view_list_proyectos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim TileViewItemElement1 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
-        Dim TileViewItemElement2 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
-        Dim TileViewItemElement3 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
-        Dim TileViewItemElement4 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
-        Dim TileViewItemElement5 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
-        Dim TileViewItemElement6 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
-        Dim TileViewItemElement7 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
+        Dim TileViewItemElement9 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
+        Dim TileViewItemElement10 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
+        Dim TileViewItemElement11 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
+        Dim TileViewItemElement12 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
+        Dim TileViewItemElement13 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
+        Dim TileViewItemElement14 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
+        Dim TileViewItemElement15 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(view_list_proyectos))
-        Dim TileViewItemElement8 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
+        Dim TileViewItemElement16 As DevExpress.XtraGrid.Views.Tile.TileViewItemElement = New DevExpress.XtraGrid.Views.Tile.TileViewItemElement()
         Me.colDescripcion = New DevExpress.XtraGrid.Columns.TileViewColumn()
         Me.colFechaInicio = New DevExpress.XtraGrid.Columns.TileViewColumn()
         Me.colFechaFinaliza = New DevExpress.XtraGrid.Columns.TileViewColumn()
@@ -131,59 +131,59 @@ Partial Class view_list_proyectos
         Me.TileViewProyectos.OptionsTiles.ItemSize = New System.Drawing.Size(260, 120)
         Me.TileViewProyectos.OptionsTiles.Orientation = System.Windows.Forms.Orientation.Vertical
         Me.TileViewProyectos.OptionsTiles.RowCount = 500
-        TileViewItemElement1.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        TileViewItemElement1.Appearance.Normal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        TileViewItemElement1.Appearance.Normal.Options.UseFont = True
-        TileViewItemElement1.Appearance.Normal.Options.UseForeColor = True
-        TileViewItemElement1.Column = Me.colDescripcion
-        TileViewItemElement1.StretchHorizontal = True
-        TileViewItemElement1.StretchVertical = True
-        TileViewItemElement1.Text = "colDescripcion"
-        TileViewItemElement1.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileViewItemElement1.TextLocation = New System.Drawing.Point(0, 25)
-        TileViewItemElement2.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
-        TileViewItemElement2.Appearance.Normal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        TileViewItemElement2.Appearance.Normal.Options.UseFont = True
-        TileViewItemElement2.Appearance.Normal.Options.UseForeColor = True
-        TileViewItemElement2.Column = Me.colFechaInicio
-        TileViewItemElement2.Text = "colFechaInicio"
-        TileViewItemElement2.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileViewItemElement2.TextLocation = New System.Drawing.Point(0, 87)
-        TileViewItemElement3.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
-        TileViewItemElement3.Appearance.Normal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        TileViewItemElement3.Appearance.Normal.Options.UseFont = True
-        TileViewItemElement3.Appearance.Normal.Options.UseForeColor = True
-        TileViewItemElement3.Column = Me.colFechaFinaliza
-        TileViewItemElement3.Text = "colFechaFinaliza"
-        TileViewItemElement3.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileViewItemElement3.TextLocation = New System.Drawing.Point(145, 87)
-        TileViewItemElement4.Text = "Proyecto:"
-        TileViewItemElement4.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileViewItemElement5.Text = "Inicio:"
-        TileViewItemElement5.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileViewItemElement5.TextLocation = New System.Drawing.Point(0, 70)
-        TileViewItemElement6.Text = "Fin:"
-        TileViewItemElement6.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileViewItemElement6.TextLocation = New System.Drawing.Point(145, 70)
-        TileViewItemElement7.Image = CType(resources.GetObject("TileViewItemElement7.Image"), System.Drawing.Image)
-        TileViewItemElement7.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopRight
-        TileViewItemElement7.Text = ""
-        TileViewItemElement8.Appearance.Normal.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        TileViewItemElement8.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 20.0!)
-        TileViewItemElement8.Appearance.Normal.Options.UseBackColor = True
-        TileViewItemElement8.Appearance.Normal.Options.UseFont = True
-        TileViewItemElement8.StretchHorizontal = True
-        TileViewItemElement8.Text = " "
-        TileViewItemElement8.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
-        TileViewItemElement8.TextLocation = New System.Drawing.Point(0, 85)
-        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement1)
-        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement2)
-        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement3)
-        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement4)
-        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement5)
-        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement6)
-        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement7)
-        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement8)
+        TileViewItemElement9.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        TileViewItemElement9.Appearance.Normal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        TileViewItemElement9.Appearance.Normal.Options.UseFont = True
+        TileViewItemElement9.Appearance.Normal.Options.UseForeColor = True
+        TileViewItemElement9.Column = Me.colDescripcion
+        TileViewItemElement9.StretchHorizontal = True
+        TileViewItemElement9.StretchVertical = True
+        TileViewItemElement9.Text = "colDescripcion"
+        TileViewItemElement9.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileViewItemElement9.TextLocation = New System.Drawing.Point(0, 25)
+        TileViewItemElement10.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
+        TileViewItemElement10.Appearance.Normal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        TileViewItemElement10.Appearance.Normal.Options.UseFont = True
+        TileViewItemElement10.Appearance.Normal.Options.UseForeColor = True
+        TileViewItemElement10.Column = Me.colFechaInicio
+        TileViewItemElement10.Text = "colFechaInicio"
+        TileViewItemElement10.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileViewItemElement10.TextLocation = New System.Drawing.Point(0, 87)
+        TileViewItemElement11.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
+        TileViewItemElement11.Appearance.Normal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        TileViewItemElement11.Appearance.Normal.Options.UseFont = True
+        TileViewItemElement11.Appearance.Normal.Options.UseForeColor = True
+        TileViewItemElement11.Column = Me.colFechaFinaliza
+        TileViewItemElement11.Text = "colFechaFinaliza"
+        TileViewItemElement11.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileViewItemElement11.TextLocation = New System.Drawing.Point(145, 87)
+        TileViewItemElement12.Text = "Proyecto:"
+        TileViewItemElement12.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileViewItemElement13.Text = "Inicio:"
+        TileViewItemElement13.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileViewItemElement13.TextLocation = New System.Drawing.Point(0, 70)
+        TileViewItemElement14.Text = "Fin:"
+        TileViewItemElement14.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileViewItemElement14.TextLocation = New System.Drawing.Point(145, 70)
+        TileViewItemElement15.Image = CType(resources.GetObject("TileViewItemElement15.Image"), System.Drawing.Image)
+        TileViewItemElement15.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopRight
+        TileViewItemElement15.Text = ""
+        TileViewItemElement16.Appearance.Normal.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        TileViewItemElement16.Appearance.Normal.Font = New System.Drawing.Font("Tahoma", 20.0!)
+        TileViewItemElement16.Appearance.Normal.Options.UseBackColor = True
+        TileViewItemElement16.Appearance.Normal.Options.UseFont = True
+        TileViewItemElement16.StretchHorizontal = True
+        TileViewItemElement16.Text = " "
+        TileViewItemElement16.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual
+        TileViewItemElement16.TextLocation = New System.Drawing.Point(0, 85)
+        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement9)
+        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement10)
+        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement11)
+        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement12)
+        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement13)
+        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement14)
+        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement15)
+        Me.TileViewProyectos.TileTemplate.Add(TileViewItemElement16)
         '
         'colDireccion
         '
@@ -249,7 +249,7 @@ Partial Class view_list_proyectos
         Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupControl1.Location = New System.Drawing.Point(0, 0)
         Me.GroupControl1.Name = "GroupControl1"
-        Me.GroupControl1.Size = New System.Drawing.Size(322, 611)
+        Me.GroupControl1.Size = New System.Drawing.Size(321, 611)
         Me.GroupControl1.TabIndex = 0
         Me.GroupControl1.Text = "Opciones del Proyecto"
         '
@@ -290,7 +290,7 @@ Partial Class view_list_proyectos
         '
         Me.lbDesProyecto.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbDesProyecto.Appearance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lbDesProyecto.Location = New System.Drawing.Point(8, 154)
+        Me.lbDesProyecto.Location = New System.Drawing.Point(7, 45)
         Me.lbDesProyecto.Name = "lbDesProyecto"
         Me.lbDesProyecto.Size = New System.Drawing.Size(12, 16)
         Me.lbDesProyecto.TabIndex = 1
@@ -300,17 +300,18 @@ Partial Class view_list_proyectos
         '
         Me.WindowsUIButtonPanelOpciones.AllowGlyphSkinning = False
         Me.WindowsUIButtonPanelOpciones.AllowHtmlDraw = True
-        Me.WindowsUIButtonPanelOpciones.Buttons.AddRange(New DevExpress.XtraEditors.ButtonPanel.IBaseButton() {New DevExpress.XtraBars.Docking2010.WindowsUIButton("Chequeo Calidad", CType(resources.GetObject("WindowsUIButtonPanelOpciones.Buttons"), System.Drawing.Image), -1, DevExpress.XtraBars.Docking2010.ImageLocation.[Default], DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", True, -1, True, Nothing, True, False, True, Nothing, "CHEQUEO", -1, False, False), New DevExpress.XtraBars.Docking2010.WindowsUIButton("Cronograma", CType(resources.GetObject("WindowsUIButtonPanelOpciones.Buttons1"), System.Drawing.Image), -1, DevExpress.XtraBars.Docking2010.ImageLocation.[Default], DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", True, -1, True, Nothing, True, False, True, Nothing, "CRONOGRAMA", -1, False, False), New DevExpress.XtraBars.Docking2010.WindowsUIButton("Presupuesto", CType(resources.GetObject("WindowsUIButtonPanelOpciones.Buttons2"), System.Drawing.Image), -1, DevExpress.XtraBars.Docking2010.ImageLocation.[Default], DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", True, -1, True, Nothing, True, False, True, Nothing, "PRESUPUESTO", -1, False, False)})
+        Me.WindowsUIButtonPanelOpciones.Buttons.AddRange(New DevExpress.XtraEditors.ButtonPanel.IBaseButton() {New DevExpress.XtraBars.Docking2010.WindowsUIButton("SubProyectos", CType(resources.GetObject("WindowsUIButtonPanelOpciones.Buttons"), System.Drawing.Image), -1, DevExpress.XtraBars.Docking2010.ImageLocation.[Default], DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", True, -1, True, Nothing, True, False, True, Nothing, "SUBPROYECTOS", -1, False, False), New DevExpress.XtraBars.Docking2010.WindowsUISeparator(), New DevExpress.XtraBars.Docking2010.WindowsUIButton("Chequeo Calidad", CType(resources.GetObject("WindowsUIButtonPanelOpciones.Buttons1"), System.Drawing.Image), -1, DevExpress.XtraBars.Docking2010.ImageLocation.[Default], DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", True, -1, True, Nothing, True, False, True, Nothing, "CHEQUEO", -1, False, False), New DevExpress.XtraBars.Docking2010.WindowsUIButton("Cronograma", CType(resources.GetObject("WindowsUIButtonPanelOpciones.Buttons2"), System.Drawing.Image), -1, DevExpress.XtraBars.Docking2010.ImageLocation.[Default], DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", True, -1, True, Nothing, True, False, True, Nothing, "CRONOGRAMA", -1, False, False), New DevExpress.XtraBars.Docking2010.WindowsUIButton("Presupuesto", CType(resources.GetObject("WindowsUIButtonPanelOpciones.Buttons3"), System.Drawing.Image), -1, DevExpress.XtraBars.Docking2010.ImageLocation.[Default], DevExpress.XtraBars.Docking2010.ButtonStyle.PushButton, "", True, -1, True, Nothing, True, False, True, Nothing, "PRESUPUESTO", -1, False, False)})
         Me.WindowsUIButtonPanelOpciones.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.WindowsUIButtonPanelOpciones.Location = New System.Drawing.Point(7, 31)
+        Me.WindowsUIButtonPanelOpciones.Location = New System.Drawing.Point(1, 105)
         Me.WindowsUIButtonPanelOpciones.Name = "WindowsUIButtonPanelOpciones"
-        Me.WindowsUIButtonPanelOpciones.Size = New System.Drawing.Size(295, 66)
+        Me.WindowsUIButtonPanelOpciones.Orientation = System.Windows.Forms.Orientation.Vertical
+        Me.WindowsUIButtonPanelOpciones.Size = New System.Drawing.Size(101, 369)
         Me.WindowsUIButtonPanelOpciones.TabIndex = 3
         Me.WindowsUIButtonPanelOpciones.Text = "WindowsUIButtonPanel2"
         '
         'LabelControl8
         '
-        Me.LabelControl8.Location = New System.Drawing.Point(37, 408)
+        Me.LabelControl8.Location = New System.Drawing.Point(112, 346)
         Me.LabelControl8.Name = "LabelControl8"
         Me.LabelControl8.Size = New System.Drawing.Size(39, 13)
         Me.LabelControl8.TabIndex = 14
@@ -319,7 +320,7 @@ Partial Class view_list_proyectos
         'LabelControl3
         '
         Me.LabelControl3.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.LabelControl3.Location = New System.Drawing.Point(18, 212)
+        Me.LabelControl3.Location = New System.Drawing.Point(112, 148)
         Me.LabelControl3.Name = "LabelControl3"
         Me.LabelControl3.Size = New System.Drawing.Size(106, 13)
         Me.LabelControl3.TabIndex = 3
@@ -327,7 +328,7 @@ Partial Class view_list_proyectos
         '
         'LabelControl9
         '
-        Me.LabelControl9.Location = New System.Drawing.Point(37, 367)
+        Me.LabelControl9.Location = New System.Drawing.Point(112, 305)
         Me.LabelControl9.Name = "LabelControl9"
         Me.LabelControl9.Size = New System.Drawing.Size(25, 13)
         Me.LabelControl9.TabIndex = 13
@@ -336,7 +337,7 @@ Partial Class view_list_proyectos
         'LabelControl4
         '
         Me.LabelControl4.Appearance.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.LabelControl4.Location = New System.Drawing.Point(18, 340)
+        Me.LabelControl4.Location = New System.Drawing.Point(112, 278)
         Me.LabelControl4.Name = "LabelControl4"
         Me.LabelControl4.Size = New System.Drawing.Size(126, 13)
         Me.LabelControl4.TabIndex = 4
@@ -344,39 +345,39 @@ Partial Class view_list_proyectos
         '
         'ProgressBarControl3
         '
-        Me.ProgressBarControl3.Location = New System.Drawing.Point(85, 398)
+        Me.ProgressBarControl3.Location = New System.Drawing.Point(156, 336)
         Me.ProgressBarControl3.Name = "ProgressBarControl3"
         Me.ProgressBarControl3.Properties.ShowTitle = True
-        Me.ProgressBarControl3.Size = New System.Drawing.Size(189, 33)
+        Me.ProgressBarControl3.Size = New System.Drawing.Size(148, 33)
         Me.ProgressBarControl3.TabIndex = 12
         '
         'bar_cronReal
         '
-        Me.bar_cronReal.Location = New System.Drawing.Point(85, 238)
+        Me.bar_cronReal.Location = New System.Drawing.Point(156, 176)
         Me.bar_cronReal.Name = "bar_cronReal"
         Me.bar_cronReal.Properties.ShowTitle = True
-        Me.bar_cronReal.Size = New System.Drawing.Size(189, 33)
+        Me.bar_cronReal.Size = New System.Drawing.Size(148, 33)
         Me.bar_cronReal.TabIndex = 6
         '
         'bar_presReal
         '
-        Me.bar_presReal.Location = New System.Drawing.Point(85, 359)
+        Me.bar_presReal.Location = New System.Drawing.Point(156, 297)
         Me.bar_presReal.Name = "bar_presReal"
         Me.bar_presReal.Properties.ShowTitle = True
-        Me.bar_presReal.Size = New System.Drawing.Size(189, 33)
+        Me.bar_presReal.Size = New System.Drawing.Size(148, 33)
         Me.bar_presReal.TabIndex = 11
         '
         'ProgressBarControl2
         '
-        Me.ProgressBarControl2.Location = New System.Drawing.Point(85, 280)
+        Me.ProgressBarControl2.Location = New System.Drawing.Point(156, 218)
         Me.ProgressBarControl2.Name = "ProgressBarControl2"
         Me.ProgressBarControl2.Properties.ShowTitle = True
-        Me.ProgressBarControl2.Size = New System.Drawing.Size(189, 33)
+        Me.ProgressBarControl2.Size = New System.Drawing.Size(148, 33)
         Me.ProgressBarControl2.TabIndex = 7
         '
         'LabelControl7
         '
-        Me.LabelControl7.Location = New System.Drawing.Point(37, 290)
+        Me.LabelControl7.Location = New System.Drawing.Point(112, 228)
         Me.LabelControl7.Name = "LabelControl7"
         Me.LabelControl7.Size = New System.Drawing.Size(39, 13)
         Me.LabelControl7.TabIndex = 9
@@ -384,7 +385,7 @@ Partial Class view_list_proyectos
         '
         'LabelControl6
         '
-        Me.LabelControl6.Location = New System.Drawing.Point(37, 246)
+        Me.LabelControl6.Location = New System.Drawing.Point(112, 184)
         Me.LabelControl6.Name = "LabelControl6"
         Me.LabelControl6.Size = New System.Drawing.Size(25, 13)
         Me.LabelControl6.TabIndex = 8

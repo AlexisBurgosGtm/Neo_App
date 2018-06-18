@@ -67,7 +67,10 @@ Public Class index
     Private Sub btnInicioCronActividades_Click(sender As Object, e As EventArgs) Handles btnInicioCronActividades.Click
         Call fcn_MostrarVista(New view_cron_actividades, Me, "Actividades Predeterminadas").Show()
     End Sub
+    Private Sub btnInicioDashboard_Click(sender As Object, e As EventArgs) Handles btnInicioDashboard.Click
 
+
+    End Sub
 
 
 #End Region
@@ -82,6 +85,8 @@ Public Class index
     Private Sub btnSkin_Black_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnSkin_Black.ItemClick
         Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Black"
     End Sub
+
+
 #End Region
 
 

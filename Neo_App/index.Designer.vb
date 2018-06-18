@@ -40,7 +40,7 @@ Partial Class index
         Me.AccordionControlElement4 = New DevExpress.XtraBars.Navigation.AccordionControlElement()
         Me.btnInicioProyectosCurso = New DevExpress.XtraBars.Navigation.AccordionControlElement()
         Me.AccordionControlElement2 = New DevExpress.XtraBars.Navigation.AccordionControlElement()
-        Me.AccordionControlElement7 = New DevExpress.XtraBars.Navigation.AccordionControlElement()
+        Me.btnInicioDashboard = New DevExpress.XtraBars.Navigation.AccordionControlElement()
         Me.AccordionControlElement8 = New DevExpress.XtraBars.Navigation.AccordionControlElement()
         Me.AccordionControlElement15 = New DevExpress.XtraBars.Navigation.AccordionControlElement()
         Me.AccordionControlElement16 = New DevExpress.XtraBars.Navigation.AccordionControlElement()
@@ -216,17 +216,17 @@ Partial Class index
         '
         'AccordionControlElement2
         '
-        Me.AccordionControlElement2.Elements.AddRange(New DevExpress.XtraBars.Navigation.AccordionControlElement() {Me.AccordionControlElement7, Me.AccordionControlElement8})
+        Me.AccordionControlElement2.Elements.AddRange(New DevExpress.XtraBars.Navigation.AccordionControlElement() {Me.btnInicioDashboard, Me.AccordionControlElement8})
         Me.AccordionControlElement2.Expanded = True
         Me.AccordionControlElement2.Image = CType(resources.GetObject("AccordionControlElement2.Image"), System.Drawing.Image)
         Me.AccordionControlElement2.Name = "AccordionControlElement2"
         Me.AccordionControlElement2.Text = "Reportes"
         '
-        'AccordionControlElement7
+        'btnInicioDashboard
         '
-        Me.AccordionControlElement7.Name = "AccordionControlElement7"
-        Me.AccordionControlElement7.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item
-        Me.AccordionControlElement7.Text = "Dashboard"
+        Me.btnInicioDashboard.Name = "btnInicioDashboard"
+        Me.btnInicioDashboard.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item
+        Me.btnInicioDashboard.Text = "Dashboard"
         '
         'AccordionControlElement8
         '
@@ -402,7 +402,7 @@ Partial Class index
     Friend WithEvents Menu_Acordion As DevExpress.XtraBars.Navigation.AccordionControl
     Friend WithEvents btnInicioProyectosCurso As DevExpress.XtraBars.Navigation.AccordionControlElement
     Friend WithEvents AccordionControlElement2 As DevExpress.XtraBars.Navigation.AccordionControlElement
-    Friend WithEvents AccordionControlElement7 As DevExpress.XtraBars.Navigation.AccordionControlElement
+    Friend WithEvents btnInicioDashboard As DevExpress.XtraBars.Navigation.AccordionControlElement
     Friend WithEvents AccordionControlElement8 As DevExpress.XtraBars.Navigation.AccordionControlElement
     Friend WithEvents AccordionControlElement3 As DevExpress.XtraBars.Navigation.AccordionControlElement
     Friend WithEvents AccordionControlElement9 As DevExpress.XtraBars.Navigation.AccordionControlElement

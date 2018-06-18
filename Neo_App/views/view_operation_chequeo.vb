@@ -13,6 +13,8 @@
     Dim DesProyecto As String
 
     Dim objProyectos As New modelProyectos
+
+
     Private Sub view_operation_chequeo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Me.lbTitulo.Text = DesProyecto
@@ -21,9 +23,19 @@
 
         Me.lbCorrelativo.Text = objProyectos.double_Correlativo_ControlCalidad()
 
+        Call CargarComboboxes()
 
     End Sub
 
+    Private Sub CargarComboboxes()
+
+        With Me.cmbSubProyecto
+            .DataSource = objProyectos.cmb_SubProyectos(CodProyecto)
+            .DisplayMember = "Descripcion"
+            .ValueMember = "Codigo"
+        End With
+
+    End Sub
 
 
 End Class
